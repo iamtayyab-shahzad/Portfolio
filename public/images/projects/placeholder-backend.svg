@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" fill="none">
+  <rect width="1440" height="900" fill="#111111"/>
+  <rect x="80" y="72" width="1280" height="756" rx="12" fill="#0a0a0a" stroke="#1f1f1f"/>
+  <rect x="160" y="200" width="1120" height="72" rx="10" fill="#161616" stroke="#1f1f1f"/>
+  <rect x="184" y="228" width="120" height="16" rx="4" fill="#4f8ef7" opacity="0.5"/>
+  <rect x="328" y="232" width="80" height="8" rx="4" fill="#2a2a2a"/>
+  <rect x="160" y="304" width="340" height="200" rx="10" fill="#161616" stroke="#1f1f1f"/>
+  <rect x="550" y="304" width="340" height="200" rx="10" fill="#161616" stroke="#1f1f1f"/>
+  <rect x="940" y="304" width="340" height="200" rx="10" fill="#161616" stroke="#1f1f1f"/>
+  <rect x="184" y="336" width="160" height="10" rx="5" fill="#2a2a2a"/>
+  <rect x="184" y="364" width="280" height="8" rx="4" fill="#1f1f1f"/>
+  <rect x="184" y="388" width="240" height="8" rx="4" fill="#1f1f1f"/>
+  <rect x="574" y="336" width="160" height="10" rx="5" fill="#2a2a2a"/>
+  <rect x="574" y="364" width="280" height="8" rx="4" fill="#1f1f1f"/>
+  <rect x="964" y="336" width="160" height="10" rx="5" fill="#2a2a2a"/>
+  <rect x="160" y="536" width="1120" height="180" rx="10" fill="#161616" stroke="#1f1f1f"/>
+  <rect x="184" y="568" width="200" height="8" rx="4" fill="#2a2a2a"/>
+  <rect x="184" y="600" width="1072" height="72" rx="6" fill="#111111"/>
+  <text x="160" y="780" font-family="ui-monospace, SFMono-Regular, monospace" font-size="14" fill="#71717a">PLACEHOLDER - BACKEND / API MOCKUP</text>
+</svg>

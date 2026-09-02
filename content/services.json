@@ -1,0 +1,39 @@
+{
+  "items": [
+    {
+      "title": "AI Agents & Automation",
+      "description": "Agents and workflows that call tools, move data, and take work off repetitive processes.",
+      "items": [
+        "AI agents",
+        "Workflow automation",
+        "API and tool integrations",
+        "Business process automation"
+      ]
+    },
+    {
+      "title": "SaaS & Web Applications",
+      "description": "Product-ready web apps — from first MVP to something customers can log into.",
+      "items": [
+        "SaaS MVPs",
+        "Dashboards",
+        "Customer-facing applications",
+        "Authentication and payments"
+      ]
+    },
+    {
+      "title": "Backend & Scalable Systems",
+      "description": "APIs and services with a data model that can grow without a rewrite.",
+      "items": ["APIs", "Service architecture", "Databases", "Third-party integrations"]
+    },
+    {
+      "title": "Business Software",
+      "description": "Internal and operational tools shaped around how the business actually runs.",
+      "items": [
+        "POS systems",
+        "Management systems",
+        "Custom internal tools",
+        "Operational software"
+      ]
+    }
+  ]
+}

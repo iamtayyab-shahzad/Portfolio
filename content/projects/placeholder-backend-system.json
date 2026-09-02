@@ -1,0 +1,37 @@
+{
+  "name": "Project Three — Placeholder",
+  "tagline": "A backend system and API. Replace this with a real case study.",
+  "description": "Placeholder overview: describe the services, the consumers of the API, and the data it owns.",
+  "category": "Backend",
+  "featured": false,
+  "isPlaceholder": true,
+  "coverImage": {
+    "src": "placeholder-backend.svg",
+    "alt": "Placeholder mockup for a backend system",
+    "width": 1440,
+    "height": 900
+  },
+  "screenshots": [
+    {
+      "src": "placeholder-backend.svg",
+      "alt": "Placeholder screenshot for Project Three",
+      "width": 1440,
+      "height": 900
+    }
+  ],
+  "problem": "Describe the systems problem: integration gaps, scale, reliability, or data that needed a proper API.",
+  "approach": "Describe how you modeled the domain, chose storage, and designed the service boundaries.",
+  "solution": "Describe the APIs, services, and data layer that were implemented.",
+  "outcome": "",
+  "features": [
+    "Replace with a real feature",
+    "Replace with a real feature",
+    "Replace with a real feature"
+  ],
+  "architecture": "Describe services, databases, auth, background jobs, and how clients integrate.",
+  "stack": ["Node.js", "PostgreSQL", "Redis", "Docker"],
+  "links": {
+    "github": "https://github.com/your-username",
+    "live": ""
+  }
+}

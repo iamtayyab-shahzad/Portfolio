@@ -1,0 +1,29 @@
+{
+  "steps": [
+    {
+      "number": "01",
+      "title": "Understand",
+      "description": "Understand the business, the users, and the actual problem — not just the requested feature."
+    },
+    {
+      "number": "02",
+      "title": "Plan",
+      "description": "Define requirements, architecture, and user flow so the build has a clear shape."
+    },
+    {
+      "number": "03",
+      "title": "Build",
+      "description": "Develop the product and integrate the systems it depends on."
+    },
+    {
+      "number": "04",
+      "title": "Test & Launch",
+      "description": "Test, deploy, and fix what only shows up in production."
+    },
+    {
+      "number": "05",
+      "title": "Improve",
+      "description": "Iterate from feedback and real usage after the first version is live."
+    }
+  ]
+}

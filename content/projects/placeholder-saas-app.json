@@ -1,0 +1,38 @@
+{
+  "name": "Project Two — Placeholder",
+  "tagline": "A SaaS web application. Replace this with a real case study.",
+  "description": "Placeholder overview: describe the product surface, the users, and the core job the app does.",
+  "category": "SaaS & Web",
+  "featured": true,
+  "isPlaceholder": true,
+  "coverImage": {
+    "src": "placeholder-saas.svg",
+    "alt": "Placeholder mockup for a SaaS web application",
+    "width": 1440,
+    "height": 900
+  },
+  "screenshots": [
+    {
+      "src": "placeholder-saas.svg",
+      "alt": "Placeholder screenshot for Project Two",
+      "width": 1440,
+      "height": 900
+    }
+  ],
+  "problem": "Describe the business or user problem this application was meant to solve.",
+  "approach": "Describe product decisions: MVP scope, auth, data model, and how you sequenced features.",
+  "solution": "Describe the application you built: dashboard, customer-facing flows, and supporting backend.",
+  "outcome": "",
+  "features": [
+    "Replace with a real feature",
+    "Replace with a real feature",
+    "Replace with a real feature",
+    "Replace with a real feature"
+  ],
+  "architecture": "Describe the app architecture: Next.js/app router, API layer, database, auth, and payments if any.",
+  "stack": ["Next.js", "TypeScript", "Node.js", "PostgreSQL", "Stripe"],
+  "links": {
+    "github": "https://github.com/your-username",
+    "live": ""
+  }
+}

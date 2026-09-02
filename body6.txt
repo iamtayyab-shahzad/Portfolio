@@ -1,0 +1,8 @@
+User-Agent: *
+Allow: /
+Disallow: /admin
+Disallow: /keystatic
+Disallow: /api/keystatic
+
+Host: https://example.com
+Sitemap: https://example.com/sitemap.xml

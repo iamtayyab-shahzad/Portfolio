@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" fill="none">
+  <rect width="1440" height="900" fill="#111111"/>
+  <rect x="80" y="72" width="1280" height="756" rx="12" fill="#0a0a0a" stroke="#1f1f1f"/>
+  <rect x="80" y="72" width="240" height="756" fill="#161616"/>
+  <rect x="112" y="108" width="120" height="10" rx="5" fill="#2a2a2a"/>
+  <rect x="112" y="180" width="176" height="36" rx="8" fill="#1a1a1a"/>
+  <rect x="112" y="228" width="176" height="36" rx="8" fill="#4f8ef7" opacity="0.18"/>
+  <rect x="112" y="276" width="176" height="36" rx="8" fill="#1a1a1a"/>
+  <rect x="112" y="324" width="176" height="36" rx="8" fill="#1a1a1a"/>
+  <rect x="368" y="108" width="220" height="12" rx="6" fill="#2a2a2a"/>
+  <rect x="368" y="140" width="140" height="8" rx="4" fill="#1f1f1f"/>
+  <rect x="368" y="180" width="300" height="140" rx="10" fill="#161616" stroke="#1f1f1f"/>
+  <rect x="700" y="180" width="300" height="140" rx="10" fill="#161616" stroke="#1f1f1f"/>
+  <rect x="1032" y="180" width="268" height="140" rx="10" fill="#161616" stroke="#1f1f1f"/>
+  <rect x="388" y="204" width="80" height="8" rx="4" fill="#4f8ef7" opacity="0.6"/>
+  <rect x="388" y="228" width="160" height="22" rx="4" fill="#2a2a2a"/>
+  <rect x="368" y="348" width="932" height="400" rx="10" fill="#161616" stroke="#1f1f1f"/>
+  <rect x="400" y="380" width="868" height="1" fill="#1f1f1f"/>
+  <rect x="400" y="412" width="868" height="1" fill="#1f1f1f"/>
+  <rect x="400" y="444" width="868" height="1" fill="#1f1f1f"/>
+  <rect x="400" y="476" width="868" height="1" fill="#1f1f1f"/>
+  <rect x="400" y="508" width="868" height="1" fill="#1f1f1f"/>
+  <text x="368" y="820" font-family="ui-monospace, SFMono-Regular, monospace" font-size="14" fill="#71717a">PLACEHOLDER - SAAS DASHBOARD MOCKUP</text>
+</svg>
