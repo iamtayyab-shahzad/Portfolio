@@ -1,0 +1,41 @@
+{
+  "name": "Write Your Own Git",
+  "tagline": "A TypeScript/Node.js reimplementation of core Git internals — objects, the index, and the commands that create commits.",
+  "description": "Write Your Own Git is a from-scratch Git client written in TypeScript. It is not a wrapper around git. It reads and writes the same on-disk structures: zlib-compressed objects, tree and commit encoding, and the binary .git/index format, including TREE cache extensions.\n\nThe CLI (Commander) implements init, hash-object, cat-file, update-index/add, status, write-tree, commit-tree, commit, and diff. Tests run with Jest. The README still marks later challenge steps as unfinished, so this is a working internals implementation, not a drop-in replacement for Git.",
+  "category": "Systems / Developer Tools",
+  "featured": false,
+  "isPlaceholder": false,
+  "coverImage": {
+    "alt": "Write Your Own Git — TypeScript CLI reimplementing Git objects, index, and core commands",
+    "width": 1440,
+    "height": 900
+  },
+  "screenshots": [],
+  "problem": "Using Git every day hides the actual model: blobs, trees, commits, refs, and a packed index. Without implementing those pieces, it is easy to treat version control as a black box instead of a content-addressed filesystem with a staging area.",
+  "approach": "Implement the object database and index first, then layer commands on top. hash-object and cat-file prove encode/decode. update-index writes staging entries. write-tree and commit-tree build Git objects from that index. status and diff compare the worktree against the parsed index. Commander is the CLI; each command lives in its own module.",
+  "solution": "A Node.js CLI that can initialize a repo, write blob objects, pretty-print objects, stage files, report worktree/index status, write trees, create commits, and show diffs. IndexParser reads .git/index headers, entries, and TREE extensions according to Git's documented index format.",
+  "outcome": "The implemented commands and object/index parsers are covered by Jest tests. Remote protocol work from later steps of the original challenge is not claimed as complete.",
+  "features": [
+    "init — create a .git directory layout",
+    "hash-object — hash content and optionally write a Git object",
+    "cat-file — show object type or pretty-printed contents",
+    "update-index / add — register working-tree files in the index",
+    "status — compare worktree and staging area",
+    "write-tree — build a tree object from the current index",
+    "commit-tree and commit — create commit objects from trees",
+    "diff — show changes between index and working tree",
+    "Object encode/decode for Git blobs, trees, and commits",
+    "Binary .git/index parser with TREE cache-extension support"
+  ],
+  "architecture": "CLI (git.ts / Commander) → command modules → object encode/decode → IndexParser for .git/index → fileStatus for worktree vs index. Objects live as Git-compatible hashed files; the index is parsed as a binary structure rather than a text cache.",
+  "stack": [
+    "TypeScript",
+    "Node.js",
+    "Commander",
+    "Jest"
+  ],
+  "links": {
+    "github": "https://github.com/Faisal-Sha/git-clone",
+    "live": ""
+  }
+}

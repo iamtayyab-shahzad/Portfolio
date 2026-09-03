@@ -1,0 +1,51 @@
+{
+  "name": "Netflix-GPT",
+  "tagline": "A Netflix-style movie browser where natural-language search is turned into title suggestions by GPT, then resolved against TMDB.",
+  "description": "Netflix-GPT is a React movie-discovery app. After Firebase email/password auth, users land on a browse experience fed by TMDB: now-playing and popular rows, a featured title, and an autoplaying trailer.\n\nGPT Search is a separate mode. The user types a natural-language query. GPT-3.5-turbo is asked to return five comma-separated movie names. Each name is looked up in TMDB, and the resulting posters are rendered with the same movie-list UI as the rest of the app. Redux Toolkit holds auth, catalog, GPT results, and UI language (English, Hindi, Spanish).",
+  "category": "AI-Powered Web Application",
+  "featured": true,
+  "isPlaceholder": false,
+  "coverImage": {
+    "src": "/images/projects/netflix-gpt/coverImage/src.png",
+    "alt": "Netflix-GPT browse screen with a Netflix-style hero, movie poster collage, and React Redux frontend tags",
+    "width": 360,
+    "height": 475
+  },
+  "screenshots": [
+    {
+      "src": "/images/projects/netflix-gpt/screenshots/0/src.png",
+      "alt": "Netflix-GPT landing-style browse interface showing a movie poster background and 'what's next' hero copy",
+      "width": 360,
+      "height": 475
+    }
+  ],
+  "problem": "Keyword search only works if the user already knows a title. People more often describe a mood, genre, or situation — and still need real posters, metadata, and trailers, not a block of model text.",
+  "approach": "Keep catalog browsing on TMDB. Use OpenAI only to interpret the query into movie names, then resolve those names through TMDB search so the UI always shows real titles. Firebase Auth gates the browse routes; Redux stores user session, movie lists, trailer keys, and GPT results.",
+  "solution": "A Vite + React app with login/sign-up, protected browse, TMDB-backed rows and trailers, and a GPT search flow: query → gpt-3.5-turbo (five titles) → TMDB search per title → suggestion rows. Language strings for the search UI can be switched without changing the data pipeline.",
+  "outcome": "The project demonstrates a practical AI integration: the model proposes titles, TMDB supplies the catalog data, and Redux plus Firebase keep the session and UI consistent. No public production URL is currently live.",
+  "features": [
+    "Firebase email/password sign-up, sign-in, and sign-out",
+    "Protected browse route driven by onAuthStateChanged",
+    "TMDB now-playing and popular movie rows with poster CDN images",
+    "Featured title with an autoplaying, muted YouTube trailer",
+    "GPT search that converts a natural-language prompt into five movie names",
+    "TMDB lookup of those names so suggestions render as real movie cards",
+    "Redux Toolkit slices for user, movies, GPT results, and language",
+    "English, Hindi, and Spanish copy for the GPT search UI"
+  ],
+  "architecture": "React (Vite) UI → Redux Toolkit → Firebase Auth for session. Browse data: TMDB REST (now playing, popular, videos) → movie slice → browse layout. GPT search: user query → OpenAI gpt-3.5-turbo → comma-separated titles → TMDB movie search per title → gpt slice → reused movie-list UI.",
+  "stack": [
+    "React",
+    "Vite",
+    "Redux Toolkit",
+    "Firebase Auth",
+    "OpenAI API",
+    "TMDB API",
+    "React Router",
+    "Tailwind CSS"
+  ],
+  "links": {
+    "github": "https://github.com/Faisal-Sha/netflix-gpt",
+    "live": ""
+  }
+}

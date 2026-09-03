@@ -3,7 +3,7 @@
   "tagline": "A SaaS web application. Replace this with a real case study.",
   "description": "Placeholder overview: describe the product surface, the users, and the core job the app does.",
   "category": "SaaS & Web",
-  "featured": true,
+  "featured": false,
   "isPlaceholder": true,
   "coverImage": {
     "src": "placeholder-saas.svg",

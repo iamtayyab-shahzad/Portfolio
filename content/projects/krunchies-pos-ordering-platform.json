@@ -3,7 +3,7 @@
   "tagline": "A full restaurant management system connecting online ordering, POS, and kitchen operations in real time.",
   "description": "A production restaurant management platform built for a real food business — customers order online, staff manage it through a POS interface, and admins run the business from a dedicated dashboard, all backed by a single Go API.",
   "category": "Full-Stack Web Application",
-  "featured": true,
+  "featured": false,
   "isPlaceholder": true,
   "coverImage": {
     "alt": "Placeholder mockup for an AI workflow product",

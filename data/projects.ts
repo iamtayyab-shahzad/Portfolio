@@ -55,12 +55,30 @@ function mapProject(entry: StoredProject & { slug: string }): Project {
   };
 }
 
+const PROJECT_ORDER = [
+  "spresuite",
+  "zyp-electric-bikes",
+  "netflix-gpt",
+  "real-time-video-chat",
+  "write-your-own-git",
+  "krunchies-pos-ordering-platform",
+];
+
 export function getProjects(): Project[] {
   if (process.env.NODE_ENV === "development") {
     noStore();
   }
 
-  return readJsonCollection<StoredProject>("content/projects").map(mapProject);
+  return readJsonCollection<StoredProject>("content/projects")
+    .map(mapProject)
+    .sort((a, b) => {
+      const aIndex = PROJECT_ORDER.indexOf(a.slug);
+      const bIndex = PROJECT_ORDER.indexOf(b.slug);
+      if (aIndex === -1 && bIndex === -1) return a.slug.localeCompare(b.slug);
+      if (aIndex === -1) return 1;
+      if (bIndex === -1) return -1;
+      return aIndex - bIndex;
+    });
 }
 
 export function getFeaturedProjects(): Project[] {

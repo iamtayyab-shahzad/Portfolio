@@ -16,7 +16,7 @@ export function FeaturedWork() {
         <SectionHeading
           eyebrow="Selected work"
           title="Case studies"
-          description="Each project is written as a case study: problem, what was built, and outcome. Placeholder entries are marked until real work is added."
+          description="Selected case studies: enterprise software, mobility systems, AI-assisted products, real-time communication, and developer tooling."
         />
         <ButtonLink href="/projects" variant="secondary" className="self-start sm:self-auto">
           All projects

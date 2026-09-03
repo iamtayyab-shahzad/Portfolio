@@ -1,0 +1,41 @@
+{
+  "name": "Real-Time Video Chat",
+  "tagline": "A browser video-chat implementation using WebRTC peer connections, Socket.IO signaling, and a data channel for in-call chat.",
+  "description": "This is a two-peer video chat built in the browser. The React client captures camera and microphone with getUserMedia, creates an RTCPeerConnection, and exchanges SDP offers/answers plus ICE candidates through a Socket.IO signaling server.\n\nThe Express server does not mix media. It only keeps rooms and forwards signaling messages. Google public STUN servers are used for ICE. A WebRTC data channel carries text chat once the peer connection is up. Signaling is wired to localhost, so this is a working implementation rather than a hosted production service.",
+  "category": "Real-Time Communication",
+  "featured": false,
+  "isPlaceholder": false,
+  "coverImage": {
+    "alt": "Real-time video chat WebRTC application — no product screenshot uploaded yet",
+    "width": 1440,
+    "height": 900
+  },
+  "screenshots": [],
+  "problem": "Browsers cannot send live audio and video to each other without a way to negotiate a peer connection. That means signaling for SDP and ICE, camera/microphone access, and a path for ICE candidates — none of which a normal HTTP API provides on its own.",
+  "approach": "Use WebRTC for media and a thin Socket.IO server for signaling. Rooms are in-memory sets of socket IDs. Offers, answers, and ICE candidates are forwarded to everyone else in the room. The client queues ICE candidates until a remote description exists, and uses Google STUN servers for candidate gathering. There is no TURN server in this implementation.",
+  "solution": "A Vite + React frontend and an Express + Socket.IO backend. Users join a room ID, start a call (createOffer + data channel), and see local/remote video plus connection state. Text messages go over an RTCDataChannel named chat. Cleanup closes the peer connection, stops tracks, and disconnects the socket.",
+  "outcome": "The signaling and peer-connection flow is implemented end to end for a local two-person call. It is not deployed, CORS is limited to localhost:5173, and there is no TURN fallback — so it should be read as a WebRTC implementation, not a production calling product.",
+  "features": [
+    "Camera and microphone capture via getUserMedia",
+    "RTCPeerConnection with offer/answer negotiation",
+    "ICE candidate exchange, including queuing until remote description is set",
+    "Google STUN servers for ICE gathering",
+    "Socket.IO rooms for signaling (join, offer, answer, ice-candidate, user-left)",
+    "Remote stream attached to a video element on ontrack",
+    "WebRTC data channel for peer-to-peer text chat",
+    "Connection status and error reporting in the UI"
+  ],
+  "architecture": "React client ⇄ Socket.IO (localhost:5000) ⇄ Express signaling server. Media path is peer-to-peer: getUserMedia → RTCPeerConnection.addTrack → remote ontrack. Signaling events: join-room, offer, answer, ice-candidate. ICE uses stun.l.google.com / stun1.l.google.com. Chat uses an RTCDataChannel, not the signaling server.",
+  "stack": [
+    "React",
+    "Vite",
+    "WebRTC",
+    "Socket.IO",
+    "Express",
+    "Node.js"
+  ],
+  "links": {
+    "github": "https://github.com/Faisal-Sha/video-chat-app",
+    "live": ""
+  }
+}

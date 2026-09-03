@@ -1,0 +1,47 @@
+{
+  "name": "ZYP Electric Bikes",
+  "tagline": "Full-stack software for an electric motorcycle product, with a React client, Go services, GraphQL, and event-driven messaging.",
+  "description": "ZYP Electric Bikes is software built around a connected electric motorcycle product. The work sits on a React frontend, Go backend, GraphQL API, PostgreSQL database, RabbitMQ for asynchronous communication, and Docker for running the stack.\n\nThis is not a simple product brochure site. The architecture is a service-backed web application: the UI talks to Go over GraphQL, persistent product and operational data lives in PostgreSQL, and RabbitMQ carries work that should not block the request path.",
+  "category": "Smart Mobility",
+  "featured": true,
+  "isPlaceholder": false,
+  "coverImage": {
+    "src": "/images/projects/zyp-electric-bikes/coverImage/src.png",
+    "alt": "Two red ZYP electric motorcycles on a factory assembly line with overhead service cables",
+    "width": 355,
+    "height": 483
+  },
+  "screenshots": [
+    {
+      "src": "/images/projects/zyp-electric-bikes/screenshots/0/src.png",
+      "alt": "ZYP electric motorcycles in a workshop assembly setting, used as the project cover visual",
+      "width": 355,
+      "height": 483
+    }
+  ],
+  "problem": "An electric motorcycle product needs more than a marketing page. Orders, product data, and operational events have to move through a real backend — with a typed API for the client and a message layer for work that should happen out of band.",
+  "approach": "Split the system into a React client and Go services behind GraphQL, with PostgreSQL as the source of truth. RabbitMQ handles asynchronous communication between services so the API does not have to do every piece of work inline. Docker packages the stack for consistent local and deployed environments.",
+  "solution": "A full-stack application for the ZYP electric bike product: React for the user-facing layer, GraphQL as the client API, Go services for business logic, PostgreSQL for storage, and RabbitMQ for event-driven communication, all containerized with Docker.",
+  "outcome": "",
+  "features": [
+    "React frontend for the product-facing web application",
+    "Go backend services for core business logic",
+    "GraphQL API between the client and services",
+    "PostgreSQL for persistent application data",
+    "RabbitMQ for asynchronous, event-driven communication",
+    "Dockerized development and deployment environment"
+  ],
+  "architecture": "React frontend → GraphQL API → Go backend services → PostgreSQL. RabbitMQ sits beside the services for asynchronous messaging. Docker packages the frontend, API, and supporting infrastructure.",
+  "stack": [
+    "React",
+    "Go",
+    "PostgreSQL",
+    "RabbitMQ",
+    "GraphQL",
+    "Docker"
+  ],
+  "links": {
+    "github": "",
+    "live": ""
+  }
+}

@@ -32,7 +32,7 @@ export default function ProjectsPage() {
           eyebrow="Work"
           title="Projects"
           as="h1"
-          description="Case studies of products and systems. Placeholder entries are labeled until real projects replace them."
+          description="Case studies of products and systems I have built — from enterprise analytics to Git internals."
         />
         <div className="mt-10 space-y-6">
           {featured.map((project, index) => (
