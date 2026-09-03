@@ -6,6 +6,7 @@
   "featured": false,
   "isPlaceholder": true,
   "coverImage": {
+    "src": "/images/projects/krunchies-pos-ordering-platform/coverImage/src.png",
     "alt": "Placeholder mockup for an AI workflow product",
     "width": 1440,
     "height": 900
