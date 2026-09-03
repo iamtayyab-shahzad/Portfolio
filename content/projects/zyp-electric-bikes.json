@@ -6,7 +6,7 @@
   "featured": true,
   "isPlaceholder": false,
   "coverImage": {
-    "src": "/images/projects/zyp-electric-bikes/coverImage/src.png",
+    "src": "/images/projects/zyp-electric-bikes/coverImage/src.avif",
     "alt": "Two red ZYP electric motorcycles on a factory assembly line with overhead service cables",
     "width": 355,
     "height": 483
@@ -22,7 +22,6 @@
   "problem": "An electric motorcycle product needs more than a marketing page. Orders, product data, and operational events have to move through a real backend — with a typed API for the client and a message layer for work that should happen out of band.",
   "approach": "Split the system into a React client and Go services behind GraphQL, with PostgreSQL as the source of truth. RabbitMQ handles asynchronous communication between services so the API does not have to do every piece of work inline. Docker packages the stack for consistent local and deployed environments.",
   "solution": "A full-stack application for the ZYP electric bike product: React for the user-facing layer, GraphQL as the client API, Go services for business logic, PostgreSQL for storage, and RabbitMQ for event-driven communication, all containerized with Docker.",
-  "outcome": "",
   "features": [
     "React frontend for the product-facing web application",
     "Go backend services for core business logic",
@@ -40,8 +39,5 @@
     "GraphQL",
     "Docker"
   ],
-  "links": {
-    "github": "",
-    "live": ""
-  }
+  "links": {}
 }

@@ -22,7 +22,6 @@
   "problem": "Finance and operations teams often track sales, payments, and recovery in separate reports. That makes it hard to see whether billed revenue is actually being collected, and where recovery is lagging, in a single view.",
   "approach": "Built a dashboard-first Angular application on a Node.js API, with MariaDB as the system of record. Chart.js renders the financial series. Kafka and ELK sit in the surrounding stack for event movement and operational logging rather than as the primary user-facing layer.",
   "solution": "A web dashboard that plots billing, recovery, and payment side by side over time. The visible surface is a grouped bar chart titled Billing-Recovery-Payment, with Sales, Payment, and Recovery as separate series so month-to-month collection performance is readable at a glance.",
-  "outcome": "",
   "features": [
     "Billing-recovery-payment dashboard comparing Sales, Payment, and Recovery over time",
     "Chart.js visualizations for financial performance series",
@@ -39,8 +38,5 @@
     "ELK",
     "Chart.js"
   ],
-  "links": {
-    "github": "",
-    "live": ""
-  }
+  "links": {}
 }

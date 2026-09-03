@@ -6,7 +6,7 @@
   "featured": true,
   "isPlaceholder": false,
   "coverImage": {
-    "src": "/images/projects/netflix-gpt/coverImage/src.png",
+    "src": "/images/projects/netflix-gpt/coverImage/src.jpg",
     "alt": "Netflix-GPT browse screen with a Netflix-style hero, movie poster collage, and React Redux frontend tags",
     "width": 360,
     "height": 475
@@ -45,7 +45,6 @@
     "Tailwind CSS"
   ],
   "links": {
-    "github": "https://github.com/Faisal-Sha/netflix-gpt",
-    "live": ""
+    "github": "https://github.com/Faisal-Sha/netflix-gpt"
   }
 }
