@@ -1,0 +1,41 @@
+{
+  "name": "Krunchies — Restaurant POS & Online Ordering Platform",
+  "tagline": "A full restaurant management system connecting online ordering, POS, and kitchen operations in real time.",
+  "description": "A production restaurant management platform built for a real food business — customers order online, staff manage it through a POS interface, and admins run the business from a dedicated dashboard, all backed by a single Go API.",
+  "category": "Full-Stack Web Application",
+  "featured": true,
+  "isPlaceholder": true,
+  "coverImage": {
+    "alt": "Placeholder mockup for an AI workflow product",
+    "width": 1440,
+    "height": 900
+  },
+  "screenshots": [
+    {
+      "src": "/images/projects/krunchies-pos-ordering-platform/screenshots/0/src.png",
+      "width": 1440,
+      "height": 900
+    }
+  ],
+  "problem": "Independent restaurants juggle disconnected tools — a website for orders, a separate POS at the counter, and no unified view for the owner. Orders get lost between systems and there's no single source of truth for the business.",
+  "approach": "Designed a single backend serving three purpose-built frontends — a customer ordering site, a staff POS interface, and an admin dashboard — so every order, no matter where it's placed, flows through one system.",
+  "solution": "Built a Go (Gin) REST API backend with a shared data layer, and three separate Next.js frontends tailored to each user type: customers browsing and ordering, staff processing orders at the counter, and owners tracking the business.",
+  "outcome": "Currently live and in active use across two restaurant locations, handling real customer orders end-to-end from website to kitchen.",
+  "features": [
+    "Replace with a real feature",
+    "Replace with a real feature"
+  ],
+  "architecture": "Full-stack web architecture with a customer-facing ordering layer, operational POS interface, centralized backend services, and persistent business data. The system is structured around shared order, product, inventory, and sales workflows so that online and in-store operations remain synchronized.",
+  "stack": [
+    "TypeScript",
+    "Next.js",
+    "Tailwind CSS",
+    "REST APIs",
+    "PostgreSQL",
+    "Node.js",
+    "React"
+  ],
+  "links": {
+    "github": "https://github.com/iamtayyab-shahzad/Krunchies-full-software"
+  }
+}
