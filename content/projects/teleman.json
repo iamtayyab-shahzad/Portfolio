@@ -1,0 +1,41 @@
+{
+  "name": "Teleman",
+  "tagline": "Telemarketing and voice-calling SaaS — campaigns, dialing, contacts, and analytics for high-volume outreach.",
+  "description": "Teleman is voice-calling SaaS for teams that need to run outbound campaigns, manage contact lists, and dial from the browser instead of spreadsheets and desk phones. The product centers on campaign orchestration, softphone calling, contact organization, and call analytics — the hard parts of realtime communications and telephony ops.\n\nUnlike a simple CRM list, Teleman has to handle call state, campaign throughput, history, and reporting while operators work live. The interesting engineering is in the realtime/comms layer: dialing flows, campaign queues, and analytics that stay useful under volume.",
+  "category": "SaaS · Voice & Comms",
+  "featured": false,
+  "isPlaceholder": false,
+  "coverImage": {
+    "src": "placeholder-backend.svg",
+    "alt": "Teleman — telemarketing and voice calling SaaS with campaigns and analytics",
+    "width": 1440,
+    "height": 900
+  },
+  "screenshots": [],
+  "problem": "Sales and telemarketing teams still burn time on manual dialing, scattered contact lists, and weak visibility into campaign performance. Voice outreach at scale needs campaign control, a reliable dialer, and analytics — not another static lead spreadsheet.",
+  "approach": "Treat calling as a product system: campaigns define who gets dialed and when, a web dialer handles live calls, contacts stay organized in lists, and every call feeds history and analytics. Emphasize realtime call state and campaign throughput over brochure-only UI.",
+  "solution": "A telemarketing SaaS surface for launching voice campaigns, dialing from the browser, managing contacts, and reviewing call outcomes. Operators get campaign and contact workflows; managers get history and analytics on what the dialer actually did.",
+  "outcome": "",
+  "features": [
+    "Outbound campaign setup and monitoring",
+    "Browser-based softphone / web dialer for live calling",
+    "Contact lists with import and campaign targeting",
+    "Call history and outcome tracking",
+    "Campaign analytics for volume and performance",
+    "Ops-focused UI for high-throughput calling teams"
+  ],
+  "architecture": "Realtime-leaning SaaS: campaign and contact services feed a dialer path; call events write into history and analytics. The hard boundary is telephony and live call state — the product has to stay coherent while operators place calls and campaigns run in parallel.",
+  "stack": [
+    "TypeScript",
+    "React",
+    "Node.js",
+    "WebSockets",
+    "Twilio",
+    "PostgreSQL",
+    "Redis",
+    "REST APIs"
+  ],
+  "links": {
+    "live": "https://teleman.pro/"
+  }
+}

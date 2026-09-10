@@ -1,0 +1,40 @@
+{
+  "name": "Bookvara (Vara)",
+  "tagline": "All-in-one scheduling and payments for service businesses — appointments, clients, staff, and reporting in one place.",
+  "description": "Bookvara (branded as Vara) is full-stack SaaS for service businesses that otherwise juggle separate tools for booking, payments, clients, and staff. Owners get online appointments, service and product catalogs, client history, built-in payments, and real-time reporting so day-to-day operations stay in one system.\n\nThe product targets medspas, beauty, wellness, and professional services — high-touch businesses that need tight schedules, accurate checkout, and client records without stitching calendars and payment processors together by hand.",
+  "category": "SaaS · Scheduling & Payments",
+  "featured": false,
+  "isPlaceholder": false,
+  "coverImage": {
+    "src": "placeholder-business.svg",
+    "alt": "Bookvara (Vara) — scheduling and payments platform for service businesses",
+    "width": 1440,
+    "height": 900
+  },
+  "screenshots": [],
+  "problem": "Service businesses run on appointments and payments, but owners often pay for one tool for the calendar, another for cards, and another for client notes. Double-booking, slow checkout, and fragmented history become daily friction.",
+  "approach": "Ship a single operational surface for bookings, services, clients, staff availability, and payments. Optimize for how service businesses actually work — packages, memberships, retail add-ons, and staff schedules — instead of a generic calendar widget.",
+  "solution": "An all-in-one platform where clients book online, staff availability stays live, services and products are managed centrally, payments happen in-product, and dashboards show revenue, appointments, and staff productivity.",
+  "outcome": "",
+  "features": [
+    "Online appointment scheduling with cancellation and availability controls",
+    "Services, add-ons, memberships, and retail products in one catalog",
+    "Client profiles with visit history, preferences, and notes",
+    "Built-in payments for cards and digital wallets",
+    "Staff scheduling and productivity visibility",
+    "Reporting dashboards for revenue and appointment performance"
+  ],
+  "architecture": "Classic multi-tenant SaaS: booking and staff calendars share a client and services data model; payments sit on the same checkout path as appointments; reporting aggregates operational events into dashboards for owners.",
+  "stack": [
+    "TypeScript",
+    "React",
+    "Next.js",
+    "Node.js",
+    "PostgreSQL",
+    "Stripe",
+    "REST APIs"
+  ],
+  "links": {
+    "live": "https://www.bookvara.com/"
+  }
+}

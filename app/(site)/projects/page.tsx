@@ -32,7 +32,7 @@ export default function ProjectsPage() {
           eyebrow="Work"
           title="Projects"
           as="h1"
-          description="Case studies of products and systems I have built — from enterprise analytics to Git internals."
+          description="Case studies of products and systems I have built — B2B SaaS, AI tools, scheduling, voice/comms, analytics, and restaurant ops."
         />
         <div className="mt-10 space-y-6">
           {featured.map((project, index) => (

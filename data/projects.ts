@@ -56,12 +56,12 @@ function mapProject(entry: StoredProject & { slug: string }): Project {
 }
 
 const PROJECT_ORDER = [
-  "spresuite",
-  "zyp-electric-bikes",
-  "netflix-gpt",
-  "real-time-video-chat",
-  "write-your-own-git",
-  "krunchies-pos-ordering-platform",
+  "experienceos",
+  "commenter-ai",
+  "bookvara",
+  "teleman",
+  "datalab-hq",
+  "musa-cafe-pos-website",
 ];
 
 export function getProjects(): Project[] {

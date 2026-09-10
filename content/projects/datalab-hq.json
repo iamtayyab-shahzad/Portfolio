@@ -1,0 +1,39 @@
+{
+  "name": "DataLab HQ",
+  "tagline": "A data and analytics platform built for decision-ready dashboards — not another generic SaaS landing page.",
+  "description": "DataLab HQ is positioned as a data and analytics product: ingest business data, shape it into usable metrics, and present operators with dashboards and reporting they can act on. The portfolio angle is deliberate — show depth in data products, pipelines, and insight surfaces, not only consumer-style marketing sites.\n\nThe work sits at the intersection of data modeling, visualization, and product UX: getting scattered operational data into a coherent analytics experience that managers can read without living in raw exports.",
+  "category": "Data · Analytics Platform",
+  "featured": false,
+  "isPlaceholder": false,
+  "coverImage": {
+    "src": "placeholder-ai.svg",
+    "alt": "DataLab HQ — data and analytics platform for dashboards and reporting",
+    "width": 1440,
+    "height": 900
+  },
+  "screenshots": [],
+  "problem": "Teams collect data across tools but still make decisions from stale exports and one-off spreadsheets. Without a productized analytics layer, metrics stay fragmented and reporting becomes a recurring manual project.",
+  "approach": "Build around the analytics workflow: bring data in, model the metrics that matter, and expose them through dashboards and reports. Keep the product focused on insight delivery rather than a thin marketing shell over a database.",
+  "solution": "A data/analytics platform surface for exploring metrics, reviewing performance views, and turning operational data into readable dashboards — so the portfolio shows real analytics product thinking alongside SaaS ops tools.",
+  "outcome": "",
+  "features": [
+    "Dashboard-first analytics experience for business metrics",
+    "Reporting views aimed at operators and managers",
+    "Data-oriented information architecture instead of brochure pages",
+    "Space for metric exploration and recurring insight workflows",
+    "Product framing that emphasizes pipelines and visualization"
+  ],
+  "architecture": "Analytics-oriented web product: data ingestion and metric modeling behind dashboard and report UIs. The emphasis is readable insight surfaces over generic CRUD — charts, aggregates, and operational KPIs as first-class product features.",
+  "stack": [
+    "TypeScript",
+    "React",
+    "Node.js",
+    "PostgreSQL",
+    "SQL analytics",
+    "Charting",
+    "REST APIs"
+  ],
+  "links": {
+    "live": "https://datalabhq.com/"
+  }
+}

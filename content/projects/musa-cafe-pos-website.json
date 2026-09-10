@@ -1,0 +1,48 @@
+{
+  "name": "Musa Cafe — POS + Website",
+  "tagline": "Full restaurant stack: customer website, staff POS, and admin — with a Go backend built for live shop operations.",
+  "description": "Musa Cafe is production restaurant software, not a toy demo. Customers order from a website, staff run the counter through a POS, and owners manage the business from an admin dashboard — all backed by a shared Go API so online and in-store orders stay on one system of record.\n\nThe POS is built for real service conditions: orders, printing, history, analytics, and offline-capable flows so the counter can keep moving when the network blips. This is shop software used in live restaurant operations.",
+  "category": "Full-Stack · Restaurant Ops",
+  "featured": true,
+  "isPlaceholder": false,
+  "coverImage": {
+    "src": "/images/projects/musa-cafe-pos-website/coverImage/src.png",
+    "alt": "Musa Cafe restaurant POS and online ordering platform",
+    "width": 1440,
+    "height": 900
+  },
+  "screenshots": [
+    {
+      "src": "/images/projects/musa-cafe-pos-website/screenshots/0/src.png",
+      "alt": "Musa Cafe POS and ordering system screenshot",
+      "width": 1440,
+      "height": 900
+    }
+  ],
+  "problem": "Independent restaurants often run a website for online orders, a separate POS at the counter, and no unified admin view. Orders get lost between systems, printing and kitchen flow break under pressure, and owners lack a single source of truth for sales and history.",
+  "approach": "One Go backend serving three purpose-built frontends: a customer ordering site, a staff POS optimized for speed and offline resilience, and an admin dashboard for products, orders, and analytics. Every order path writes through the same API.",
+  "solution": "A full restaurant stack where website orders and counter sales land in one system. Staff get POS workflows for orders, printing, and history; admins get operational controls and analytics; the Go API keeps the business synchronized across locations.",
+  "outcome": "Live shop software in active restaurant use — handling real customer orders from website to kitchen, with POS and admin workflows built for day-to-day operations.",
+  "features": [
+    "Customer-facing website for browsing and online ordering",
+    "Staff POS for counter orders, tickets, and fast checkout",
+    "Admin dashboard for catalog, orders, and business oversight",
+    "Offline-capable POS flows for unreliable networks",
+    "Order printing and kitchen-facing operational handoff",
+    "Order history and sales analytics for owners"
+  ],
+  "architecture": "Three Next.js frontends (website, POS, admin) on a shared Go (Gin) REST API and PostgreSQL. Order, product, and sales workflows are centralized so online and in-store channels stay synchronized; POS clients are designed to keep working through brief connectivity issues.",
+  "stack": [
+    "Go",
+    "Gin",
+    "TypeScript",
+    "Next.js",
+    "React",
+    "PostgreSQL",
+    "REST APIs",
+    "Tailwind CSS"
+  ],
+  "links": {
+    "github": "https://github.com/iamtayyab-shahzad/Krunchies-full-software"
+  }
+}
