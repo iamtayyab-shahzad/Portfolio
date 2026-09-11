@@ -1,7 +1,7 @@
 {
   "name": "DataLab HQ",
   "tagline": "A data and analytics platform built for decision-ready dashboards — not another generic SaaS landing page.",
-  "description": "DataLab HQ is positioned as a data and analytics product: ingest business data, shape it into usable metrics, and present operators with dashboards and reporting they can act on. The portfolio angle is deliberate — show depth in data products, pipelines, and insight surfaces, not only consumer-style marketing sites.\n\nThe work sits at the intersection of data modeling, visualization, and product UX: getting scattered operational data into a coherent analytics experience that managers can read without living in raw exports.",
+  "description": "DataLab HQ is a data and analytics platform for decision-ready dashboards — ingest business data, model metrics, and present operators with reporting they can act on without living in raw exports.",
   "category": "Data · Analytics Platform",
   "featured": false,
   "isPlaceholder": false,

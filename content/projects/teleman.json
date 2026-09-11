@@ -1,7 +1,7 @@
 {
   "name": "Teleman",
   "tagline": "Telemarketing and voice-calling SaaS — campaigns, dialing, contacts, and analytics for high-volume outreach.",
-  "description": "Teleman is voice-calling SaaS for teams that need to run outbound campaigns, manage contact lists, and dial from the browser instead of spreadsheets and desk phones. The product centers on campaign orchestration, softphone calling, contact organization, and call analytics — the hard parts of realtime communications and telephony ops.\n\nUnlike a simple CRM list, Teleman has to handle call state, campaign throughput, history, and reporting while operators work live. The interesting engineering is in the realtime/comms layer: dialing flows, campaign queues, and analytics that stay useful under volume.",
+  "description": "Teleman is voice-calling SaaS for outbound campaigns, browser dialing, contacts, and call analytics. The hard part is realtime communications — call state, campaign throughput, and reporting while operators work live.",
   "category": "SaaS · Voice & Comms",
   "featured": false,
   "isPlaceholder": false,

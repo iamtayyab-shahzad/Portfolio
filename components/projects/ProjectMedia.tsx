@@ -51,7 +51,13 @@ export function TechPills({ stack }: { stack: string[] }) {
   );
 }
 
-export function ProjectLinks({ project }: { project: Project }) {
+export function ProjectLinks({
+  project,
+  showCaseStudy = true,
+}: {
+  project: Project;
+  showCaseStudy?: boolean;
+}) {
   return (
     <div className="flex flex-wrap gap-4">
       {project.links.live ? (
@@ -76,13 +82,15 @@ export function ProjectLinks({ project }: { project: Project }) {
           <ArrowUpRightIcon className="h-3.5 w-3.5" />
         </a>
       ) : null}
-      <Link
-        href={`/projects/${project.slug}`}
-        className="inline-flex items-center gap-1 text-sm text-muted transition-colors hover:text-ink"
-      >
-        Case study
-        <ArrowUpRightIcon className="h-3.5 w-3.5" />
-      </Link>
+      {showCaseStudy ? (
+        <Link
+          href={`/projects/${project.slug}`}
+          className="inline-flex items-center gap-1 text-sm text-muted transition-colors hover:text-ink"
+        >
+          Case study
+          <ArrowUpRightIcon className="h-3.5 w-3.5" />
+        </Link>
+      ) : null}
     </div>
   );
 }

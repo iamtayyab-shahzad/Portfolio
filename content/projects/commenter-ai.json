@@ -1,38 +1,49 @@
 {
   "name": "Commenter AI",
-  "tagline": "AI sales conversation prioritization across LinkedIn, Gmail, and Google Calendar — so revenue threads stop getting buried.",
-  "description": "Commenter AI helps founders, AEs, and recruiters who run many active deals across LinkedIn, email, and meetings. Instead of scanning every inbox, users label revenue conversations once and get a prioritized daily view of which threads need attention — ranked by context, timing, next steps, sentiment, and calendar signals.\n\nAI drafting is part of the product, but the core job is prioritization and deal awareness: keep revenue threads separate from noise, show who owes the next move, and draft replies when speed matters without auto-sending.",
+  "tagline": "AI sales conversation prioritization across LinkedIn, Gmail, and Google Calendar.",
+  "description": "Commenter AI helps founders, AEs, and recruiters running many active deals. It ranks revenue conversations by context, timing, next steps, and meeting signals — so the right threads get attention first.",
   "category": "AI Product · Sales Ops",
   "featured": true,
   "isPlaceholder": false,
   "coverImage": {
-    "src": "placeholder-ai.svg",
-    "alt": "Commenter AI — prioritized sales conversations across LinkedIn, Gmail, and Calendar",
-    "width": 1440,
-    "height": 900
+    "src": "/images/projects/commenter-ai/commenter-ai-conversations.webp",
+    "alt": "Commenter AI Active Conversations list with prioritized leads and clients",
+    "width": 540,
+    "height": 314
   },
-  "screenshots": [],
-  "problem": "Sellers managing 10+ active deals jump between LinkedIn, Gmail, and Google Calendar. The loudest thread wins attention, quiet buyers slip, and half-won deals stall because nobody has a single ordered view of what needs action today.",
-  "approach": "Build a lightweight conversation layer on top of the channels sellers already use. Connect LinkedIn, Gmail, and Calendar; let users mark revenue threads; then rank those threads by deal context instead of forcing a full CRM workflow.",
-  "solution": "A prioritization product that surfaces revenue conversations in a clear daily order, with thread context, ownership of the next step, sentiment and meeting signals, and AI-assisted drafting for comments and DMs when the user chooses to reply faster.",
+  "screenshots": [
+    {
+      "src": "/images/projects/commenter-ai/commenter-ai-context.webp",
+      "alt": "Commenter AI conversation list showing status, ownership, and next-step context",
+      "width": 1200,
+      "height": 900
+    },
+    {
+      "src": "/images/projects/commenter-ai/commenter-ai-workflow.webp",
+      "alt": "Commenter AI conversation workspace with AI reply drafting, deal context, and reminders",
+      "width": 1400,
+      "height": 900
+    }
+  ],
+  "problem": "Sellers juggling 10+ deals jump between LinkedIn, Gmail, and Calendar. The loudest thread wins, quiet buyers slip, and half-won deals stall.",
+  "approach": "Connect the channels sellers already use, label revenue conversations once, then rank what needs attention today — without forcing a full CRM workflow.",
+  "solution": "A prioritization product with a daily ordered conversation list, deal context and ownership, and AI-assisted drafting when the user chooses to reply faster.",
   "outcome": "",
   "features": [
-    "LinkedIn + Gmail + Google Calendar connected in one prioritized view",
-    "Revenue conversation labeling to separate deals from inbox noise",
-    "Ranking by context, timing, next steps, sentiment, and meeting signals",
+    "LinkedIn + Gmail + Google Calendar in one prioritized view",
+    "Revenue conversation labeling separate from inbox noise",
+    "Ranking by context, timing, next steps, and meeting signals",
     "Clear ownership of who owes the next move",
-    "AI drafting for LinkedIn comments and DMs without auto-send",
-    "Daily focus list for sellers running many parallel deals"
+    "AI drafting for comments and DMs without auto-send"
   ],
-  "architecture": "Integration-heavy AI product: OAuth-connected messaging and calendar sources feed a ranking and context layer. The UI presents prioritized conversations and drafting helpers; the system does not replace a full CRM or auto-blast outreach.",
+  "architecture": "Integration-heavy AI product: OAuth-connected messaging and calendar sources feed a ranking and context layer with drafting helpers in the conversation workspace.",
   "stack": [
     "TypeScript",
     "React",
     "Node.js",
     "OpenAI API",
     "OAuth integrations",
-    "PostgreSQL",
-    "REST APIs"
+    "PostgreSQL"
   ],
   "links": {
     "live": "https://www.commenter.ai/"

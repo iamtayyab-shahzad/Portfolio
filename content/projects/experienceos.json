@@ -1,38 +1,43 @@
 {
   "name": "experienceOS",
-  "tagline": "The operating system for experiential campaigns — campaigns, staffing, assets, lead capture, and reporting in one platform.",
-  "description": "experienceOS is B2B SaaS built for experiential agencies and live-event teams that outgrow spreadsheets and ad-hoc tools. The product unifies campaign planning, field staffing, asset inventory, on-site lead capture, dashboards, and client-ready reporting so national programs can run without a frankenstack of Airtable, decks, and manual ops.\n\nThe surface is multi-module: operators create campaigns and event timelines, assign shifts and roles, track branded assets, capture live engagement in the field, and turn that data into polished post-event reports — without rebuilding the same workflow for every activation.",
+  "tagline": "B2B SaaS for experiential agencies — campaigns, staffing, assets, lead capture, and reporting in one platform.",
+  "description": "experienceOS is the operating system for experiential campaigns. Agencies and live-event teams use it to run programs end to end instead of stitching spreadsheets, Airtable, and decks together.",
   "category": "B2B SaaS · Experiential Ops",
   "featured": true,
   "isPlaceholder": false,
   "coverImage": {
-    "src": "placeholder-saas.svg",
-    "alt": "experienceOS — experiential campaign operating system for agencies and live events",
-    "width": 1440,
-    "height": 900
+    "src": "/images/projects/experienceos/experienceos-dashboard.webp",
+    "alt": "experienceOS dashboard overview with campaign KPIs, lead capture metrics, and traffic analytics",
+    "width": 1522,
+    "height": 558
   },
-  "screenshots": [],
-  "problem": "Experiential agencies stitch together spreadsheets, Airtable bases, PowerPoint decks, and scattered docs. Staffing, assets, and lead data live in different places, real-time engagement is hard to see across events, and post-event reporting burns hours rebuilding the same client deliverable every time.",
-  "approach": "Design one product around experiential workflows instead of forcing generic project software onto live events. Model campaigns as the spine, then attach staffing, assets, field data capture, and reporting as connected modules that share the same program context.",
-  "solution": "A multi-module SaaS platform where teams create campaigns, configure ops, run activations with live capture, and generate client-ready reports from the same system of record. Dashboards and automated reporting replace one-off decks; field staff get web access without counting against admin seats.",
+  "screenshots": [
+    {
+      "src": "/images/projects/experienceos/experienceos-campaigns.webp",
+      "alt": "experienceOS campaigns board showing active and upcoming activations in Kanban view",
+      "width": 472,
+      "height": 412
+    }
+  ],
+  "problem": "Experiential teams burn hours across disconnected tools. Campaigns, staffing, assets, and reporting live in different places, so post-event decks get rebuilt from scratch every time.",
+  "approach": "Build one product around experiential workflows: campaigns as the spine, with staffing, assets, field capture, and reporting connected to the same program context.",
+  "solution": "A multi-module SaaS platform for campaign operations — from setup and field execution through live engagement data and client-ready reporting.",
   "outcome": "",
   "features": [
-    "Campaign management with locations, dates, and program timelines",
-    "Staffing and shift assignment with coverage tracking by event",
-    "Asset and inventory tracking with live utilization views",
-    "On-site lead and engagement capture for field teams",
-    "Real-time dashboards and automated post-event reporting",
-    "Scales from small agencies to multi-client enterprise programs"
+    "Campaign management with locations, timelines, and status boards",
+    "Staffing and coverage tracking by event",
+    "Asset and inventory assignment across activations",
+    "On-site lead and engagement capture",
+    "Dashboards and automated post-event reporting"
   ],
-  "architecture": "Multi-tenant B2B SaaS organized around campaign → event → ops modules. Shared program context feeds staffing, assets, field capture, and reporting so activations stay synchronized from setup through client delivery.",
+  "architecture": "Multi-tenant B2B SaaS organized around campaign → event → ops modules, with shared program context feeding staffing, assets, field capture, and reporting.",
   "stack": [
     "TypeScript",
     "React",
     "Next.js",
     "Node.js",
     "PostgreSQL",
-    "REST APIs",
-    "Dashboards"
+    "REST APIs"
   ],
   "links": {
     "live": "https://experienceos.io/"

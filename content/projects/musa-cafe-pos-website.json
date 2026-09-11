@@ -1,7 +1,7 @@
 {
   "name": "Musa Cafe — POS + Website",
   "tagline": "Full restaurant stack: customer website, staff POS, and admin — with a Go backend built for live shop operations.",
-  "description": "Musa Cafe is production restaurant software, not a toy demo. Customers order from a website, staff run the counter through a POS, and owners manage the business from an admin dashboard — all backed by a shared Go API so online and in-store orders stay on one system of record.\n\nThe POS is built for real service conditions: orders, printing, history, analytics, and offline-capable flows so the counter can keep moving when the network blips. This is shop software used in live restaurant operations.",
+  "description": "Musa Cafe is live restaurant software: customer website, staff POS, and admin on a shared Go API. Orders, printing, history, analytics, and offline-capable POS flows keep the counter moving in real shop conditions.",
   "category": "Full-Stack · Restaurant Ops",
   "featured": true,
   "isPlaceholder": false,
