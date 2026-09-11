@@ -1,11 +1,12 @@
 "use client";
 
+import { ButtonLink } from "@/components/ui/Button";
+import { CloseIcon } from "@/components/ui/Icons";
 import { siteConfig } from "@/data/site";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
-import { CloseIcon } from "@/components/ui/Icons";
 
 type MobileMenuProps = {
   open: boolean;
@@ -62,7 +63,7 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
         className="absolute inset-x-0 top-0 z-10 border-b border-line bg-bg px-5 pb-8 pt-5"
       >
         <div className="flex items-center justify-between">
-          <p className="font-medium tracking-tight">{siteConfig.wordmark}</p>
+          <p className="font-semibold tracking-tight">{siteConfig.wordmark}</p>
           <button
             type="button"
             onClick={onClose}
@@ -75,14 +76,17 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
         <nav className="mt-8 flex flex-col gap-1" aria-label="Mobile">
           {siteConfig.navigation.map((item) => {
             const active =
-              item.href === "/"
-                ? pathname === "/"
-                : pathname.startsWith(item.href);
+              item.href.startsWith("/#")
+                ? false
+                : item.href === "/"
+                  ? pathname === "/"
+                  : pathname.startsWith(item.href);
 
             return (
               <Link
                 key={item.href}
                 href={item.href}
+                onClick={onClose}
                 className={cn(
                   "rounded-lg px-3 py-3 text-base transition-colors",
                   active ? "bg-white/[0.04] text-ink" : "text-muted hover:text-ink",
@@ -93,6 +97,11 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
             );
           })}
         </nav>
+        <div className="mt-6">
+          <ButtonLink href="/contact" className="w-full">
+            Start a Project
+          </ButtonLink>
+        </div>
       </div>
     </div>
   );

@@ -1,34 +1,29 @@
 {
   "groups": [
     {
-      "category": "AI / Automation",
+      "category": "Product engineering",
       "items": [
-        "OpenAI API",
-        "LangChain",
-        "AI agents",
-        "Workflow automation",
-        "Tool / API integrations"
+        "Frontend + backend development",
+        "Database design",
+        "REST APIs",
+        "Authentication & authorization"
       ]
     },
     {
-      "category": "Backend",
-      "items": ["Node.js", "Python", "REST APIs", "Authentication", "Background jobs"]
+      "category": "Systems & delivery",
+      "items": [
+        "Admin dashboards",
+        "SaaS architecture",
+        "Third-party integrations",
+        "Deployment and production setup"
+      ]
     },
     {
-      "category": "Frontend",
-      "items": ["TypeScript", "React", "Next.js", "Tailwind CSS"]
-    },
-    {
-      "category": "Databases",
-      "items": ["PostgreSQL", "Redis", "Prisma"]
-    },
-    {
-      "category": "DevOps / Infrastructure",
-      "items": ["Docker", "Linux", "CI/CD", "Vercel"]
-    },
-    {
-      "category": "Tools",
-      "items": ["Git", "GitHub", "VS Code / Cursor"]
+      "category": "Intelligence & automation",
+      "items": [
+        "AI / API integrations",
+        "Business workflow automation"
+      ]
     }
   ]
 }

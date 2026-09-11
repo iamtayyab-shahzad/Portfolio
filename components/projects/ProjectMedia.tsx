@@ -20,7 +20,7 @@ export function ProjectMedia({
   return (
     <div
       className={cn(
-        "relative aspect-[16/10] overflow-hidden rounded-lg border border-line bg-elevated",
+        "relative aspect-[16/10] overflow-hidden rounded-xl border border-line bg-elevated",
         className,
       )}
     >
@@ -67,7 +67,7 @@ export function ProjectLinks({
           rel="noreferrer noopener"
           className="inline-flex items-center gap-1 text-sm text-accent transition-colors hover:text-ink"
         >
-          Live demo
+          Live product
           <ArrowUpRightIcon className="h-3.5 w-3.5" />
         </a>
       ) : null}

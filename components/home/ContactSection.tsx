@@ -10,7 +10,9 @@ export function ContactSection({
   compact?: boolean;
 }) {
   const github = socialLinks.find((link) => link.label === "GitHub");
-  const linkedin = socialLinks.find((link) => link.label === "LinkedIn");
+  const linkedin = socialLinks.find(
+    (link) => link.label === "LinkedIn" && !link.href.includes("your-profile"),
+  );
 
   return (
     <Section id="contact">

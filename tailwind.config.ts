@@ -10,28 +10,31 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        bg: "#0a0a0a",
-        surface: "#111111",
-        elevated: "#161616",
-        line: "#1f1f1f",
-        ink: "#f5f5f5",
-        muted: "#a1a1aa",
-        dim: "#71717a",
+        bg: "var(--color-bg)",
+        surface: "var(--color-surface)",
+        elevated: "var(--color-elevated)",
+        line: "var(--color-line)",
+        ink: "var(--color-ink)",
+        muted: "var(--color-muted)",
+        dim: "var(--color-dim)",
         accent: {
-          DEFAULT: "#4f8ef7",
-          hover: "#3b7aef",
-          soft: "rgba(79, 142, 247, 0.12)",
+          DEFAULT: "var(--color-accent)",
+          hover: "var(--color-accent-hover)",
+          soft: "var(--color-accent-soft)",
         },
       },
       maxWidth: {
         content: "72rem",
       },
       fontFamily: {
-        sans: ["var(--font-geist-sans)", "ui-sans-serif", "system-ui", "sans-serif"],
-        mono: ["var(--font-geist-mono)", "ui-monospace", "SFMono-Regular", "monospace"],
+        sans: ["var(--font-sans)", "ui-sans-serif", "system-ui", "sans-serif"],
+        mono: ["var(--font-mono)", "ui-monospace", "SFMono-Regular", "monospace"],
+      },
+      letterSpacing: {
+        tighter: "-0.04em",
       },
       boxShadow: {
-        glow: "0 0 80px -20px rgba(79, 142, 247, 0.35)",
+        soft: "0 24px 80px -40px rgba(0, 0, 0, 0.65)",
       },
     },
   },

@@ -6,7 +6,7 @@ import { createMetadata } from "@/lib/seo";
 export const metadata = createMetadata({
   title: "Contact",
   description:
-    "Start a conversation about a product idea, AI system, SaaS application, or custom software project.",
+    "Start a project for a web application, SaaS product, business system, or AI-powered feature.",
   path: "/contact",
 });
 

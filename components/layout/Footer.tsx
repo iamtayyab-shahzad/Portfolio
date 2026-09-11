@@ -15,13 +15,16 @@ function SocialIcon({ label }: { label: string }) {
 
 export function Footer() {
   const year = new Date().getFullYear();
+  const links = socialLinks.filter(
+    (link) => !(link.label === "LinkedIn" && link.href.includes("your-profile")),
+  );
 
   return (
     <footer className="border-t border-line">
       <Container className="py-12 md:py-16">
         <div className="grid gap-10 md:grid-cols-[1.2fr_0.8fr_0.8fr]">
           <div>
-            <p className="text-sm font-medium tracking-tight text-ink">
+            <p className="text-sm font-semibold tracking-tight text-ink">
               {siteConfig.wordmark}
             </p>
             <p className="mt-3 max-w-sm text-sm leading-relaxed text-muted">
@@ -29,7 +32,7 @@ export function Footer() {
             </p>
           </div>
           <div>
-            <p className="font-mono text-xs uppercase tracking-[0.18em] text-dim">
+            <p className="text-xs font-medium uppercase tracking-[0.16em] text-dim">
               Navigate
             </p>
             <ul className="mt-4 space-y-2">
@@ -46,7 +49,7 @@ export function Footer() {
             </ul>
           </div>
           <div>
-            <p className="font-mono text-xs uppercase tracking-[0.18em] text-dim">
+            <p className="text-xs font-medium uppercase tracking-[0.16em] text-dim">
               Connect
             </p>
             <ul className="mt-4 space-y-2">
@@ -59,7 +62,7 @@ export function Footer() {
                   {siteConfig.email}
                 </a>
               </li>
-              {socialLinks.map((link) => (
+              {links.map((link) => (
                 <li key={link.href}>
                   <a
                     href={link.href}
@@ -79,7 +82,7 @@ export function Footer() {
           <p>
             © {year} {siteConfig.name}
           </p>
-          <p>Built with Next.js</p>
+          <p>Full-Stack Developer</p>
         </div>
       </Container>
     </footer>

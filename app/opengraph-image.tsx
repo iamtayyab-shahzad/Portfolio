@@ -15,18 +15,18 @@ export default function OpenGraphImage() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          background: "#0a0a0a",
+          background: "#070708",
           padding: "72px",
-          color: "#f5f5f5",
+          color: "#f4f4f5",
         }}
       >
         <div
           style={{
             fontSize: 22,
-            letterSpacing: "0.18em",
+            letterSpacing: "0.16em",
             textTransform: "uppercase",
-            color: "#4f8ef7",
-            fontFamily: "monospace",
+            color: "#8ea8ff",
+            fontFamily: "sans-serif",
           }}
         >
           {siteConfig.name}

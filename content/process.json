@@ -3,27 +3,22 @@
     {
       "number": "01",
       "title": "Understand",
-      "description": "Understand the business, the users, and the actual problem — not just the requested feature."
+      "description": "Understand the business, users, requirements, and desired outcome."
     },
     {
       "number": "02",
-      "title": "Plan",
-      "description": "Define requirements, architecture, and user flow so the build has a clear shape."
+      "title": "Build",
+      "description": "Design and develop the application across frontend, backend, and database."
     },
     {
       "number": "03",
-      "title": "Build",
-      "description": "Develop the product and integrate the systems it depends on."
+      "title": "Integrate",
+      "description": "Connect APIs, payments, AI, external services, and existing workflows where needed."
     },
     {
       "number": "04",
-      "title": "Test & Launch",
-      "description": "Test, deploy, and fix what only shows up in production."
-    },
-    {
-      "number": "05",
-      "title": "Improve",
-      "description": "Iterate from feedback and real usage after the first version is live."
+      "title": "Launch",
+      "description": "Deploy, test, refine, and prepare the product for real users."
     }
   ]
 }

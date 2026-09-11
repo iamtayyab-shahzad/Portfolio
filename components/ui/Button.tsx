@@ -11,14 +11,14 @@ type CommonProps = {
 
 const styles: Record<ButtonVariant, string> = {
   primary:
-    "bg-accent text-white hover:bg-accent-hover border-transparent shadow-[0_0_0_1px_rgba(79,142,247,0.4)]",
+    "bg-accent text-[#0a0a0c] hover:bg-accent-hover border-transparent",
   secondary:
-    "bg-transparent text-ink border-white/15 hover:border-white/30 hover:bg-white/[0.03]",
+    "bg-transparent text-ink border-white/12 hover:border-white/25 hover:bg-white/[0.03]",
   ghost: "bg-transparent text-muted border-transparent hover:text-ink",
 };
 
 const base =
-  "inline-flex items-center justify-center gap-2 rounded-lg border px-4 py-2.5 text-sm font-medium transition-colors duration-200 min-h-11";
+  "inline-flex items-center justify-center gap-2 rounded-md border px-4 py-2.5 text-sm font-medium transition-colors duration-200 min-h-11";
 
 export function ButtonLink({
   href,

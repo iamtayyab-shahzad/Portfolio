@@ -3,31 +3,27 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { skillGroups } from "@/data/skills";
 
 export function Skills() {
+  const capabilities = skillGroups.flatMap((group) => group.items);
+
   return (
-    <Section id="stack">
-      <SectionHeading
-        eyebrow="Stack"
-        title="Technologies I work with"
-        description="A curated set — not an exhaustive list. Replace these with the tools you actually ship with."
-      />
-      <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-        {skillGroups.map((group) => (
-          <div key={group.category}>
-            <h3 className="font-mono text-xs uppercase tracking-[0.16em] text-dim">
-              {group.category}
-            </h3>
-            <ul className="mt-3 flex flex-wrap gap-2">
-              {group.items.map((item) => (
-                <li
-                  key={item}
-                  className="rounded-md border border-white/10 bg-white/[0.03] px-2.5 py-1.5 font-mono text-xs text-muted"
-                >
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
+    <Section id="capabilities">
+      <div className="grid gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-start lg:gap-16">
+        <SectionHeading
+          eyebrow="Why work with me"
+          title="Practical full-stack delivery"
+          description="Capabilities that matter when shipping real software — not a wall of logos."
+        />
+        <ul className="grid gap-3 sm:grid-cols-2">
+          {capabilities.map((item) => (
+            <li
+              key={item}
+              className="flex items-start gap-3 border-b border-line pb-3 text-sm text-muted"
+            >
+              <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent" aria-hidden />
+              <span className="leading-relaxed text-ink/90">{item}</span>
+            </li>
+          ))}
+        </ul>
       </div>
     </Section>
   );

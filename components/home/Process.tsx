@@ -7,20 +7,17 @@ export function Process() {
     <Section id="process">
       <SectionHeading
         eyebrow="Process"
-        title="How I work"
-        description="A straightforward path from problem to a product people can use."
+        title="How projects move"
+        description="A simple path from requirements to a product people can use."
       />
-      <ol className="mt-10 divide-y divide-line border-y border-line">
+      <ol className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {processSteps.map((step) => (
-          <li
-            key={step.number}
-            className="grid gap-3 py-6 sm:grid-cols-[5.5rem_minmax(0,12rem)_minmax(0,1fr)] sm:items-baseline sm:gap-8"
-          >
-            <span className="font-mono text-sm text-accent">{step.number}</span>
-            <h3 className="text-base font-medium tracking-tight text-ink">
+          <li key={step.number} className="border-t border-line pt-5">
+            <span className="font-mono text-xs text-accent">{step.number}</span>
+            <h3 className="mt-3 text-base font-semibold tracking-tight text-ink">
               {step.title}
             </h3>
-            <p className="text-sm leading-relaxed text-muted">{step.description}</p>
+            <p className="mt-2 text-sm leading-relaxed text-muted">{step.description}</p>
           </li>
         ))}
       </ol>

@@ -56,12 +56,12 @@ function mapProject(entry: StoredProject & { slug: string }): Project {
 }
 
 const PROJECT_ORDER = [
+  "musa-cafe-pos-website",
   "experienceos",
   "commenter-ai",
   "bookvara",
   "teleman",
   "datalab-hq",
-  "musa-cafe-pos-website",
 ];
 
 export function getProjects(): Project[] {

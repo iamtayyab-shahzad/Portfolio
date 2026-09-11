@@ -1,63 +1,63 @@
 {
   "name": "Tayyab Shahzad",
-  "wordmark": "TAYYAB.DEV",
-  "role": "Full-Stack Web Developer & AI Product Builder",
-  "url": "http://localhost:3000/",
+  "wordmark": "Tayyab",
+  "role": "Full-Stack Developer",
+  "url": "https://tayyab-portfolio-kappa.vercel.app",
   "locale": "en_US",
   "email": "iamtayyabshahzad2025@gmail.com",
   "location": "Pakistan",
   "availability": {
     "visible": true,
     "available": true,
-    "label": "Available for freelance work"
+    "label": "Available for new projects"
   },
   "hero": {
-    "headline": "I build fast, reliable web applications.",
-    "valueProposition": "I design and build full-stack software from frontend to backend and deployment — creating reliable, scalable products and integrating AI agents and automation where they deliver real business value.",
+    "headline": "Full-Stack Development for Businesses & Products",
+    "valueProposition": "I build web applications, SaaS products, and business systems — and add AI where it makes the product smarter or more efficient.",
     "primaryCta": {
-      "label": "View My Work",
-      "href": "/projects"
+      "label": "Start a Project",
+      "href": "/contact"
     },
     "secondaryCta": {
-      "label": "Let's Work Together",
-      "href": "/contact"
+      "label": "View My Work",
+      "href": "/projects"
     }
   },
   "about": {
     "image": {
       "src": "/images/about/image/src.png",
-      "alt": "Image failed to load.",
+      "alt": "Portrait of Tayyab Shahzad, full-stack developer",
       "width": 640,
       "height": 800
     },
-    "who": "I'm a full-stack developer focused on turning ideas, requirements, and business problems into reliable software products. I work across frontend development, backend systems, databases, APIs, integrations, and deployment to build applications from the ground up.",
-    "interestedIn": "I'm particularly interested in AI-powered products, AI agents, intelligent automation, and scalable software systems. I enjoy exploring how AI can connect with tools, APIs, databases, and business workflows to create software that can do more than traditional applications.",
-    "whatIBuild": "I build full-stack web applications, SaaS products, business management systems, backend services, APIs, and custom software. I also develop AI agents and automation workflows that connect models with tools, APIs, databases, and real-world business processes.",
-    "headingTowards": "My goal is to build increasingly sophisticated software products that combine strong engineering with AI — from custom client solutions to scalable SaaS products used by businesses every day."
+    "who": "I'm a full-stack developer focused on building practical software products and business systems. I work across frontend, backend, databases, APIs, deployment, and integrations — with AI added when it genuinely improves the product.",
+    "interestedIn": "I care about software that solves real operational problems: ordering systems, admin dashboards, SaaS products, and workflows that replace fragmented tools.",
+    "whatIBuild": "I build full-stack web applications, SaaS products, business management systems, APIs, and custom software. AI features are added when they create measurable value — not as a default label.",
+    "headingTowards": "I want to keep shipping production software that businesses can rely on day to day — clear requirements, solid engineering, and honest delivery."
   },
   "footer": {
-    "statement": "Building software, solving problems, and exploring what AI can make possible."
+    "statement": "Full-stack development for web applications, SaaS products, and business systems."
   },
   "contact": {
-    "headline": "Have a project in mind?",
-    "subheadline": "Tell me what you're building, what problem you're trying to solve, and where you want to take it. I'll help turn the idea into a practical software solution.",
-    "note": "I work on web applications, SaaS products, business systems, backend development, AI agents, automation, and custom software.",
+    "headline": "Have a product or business system in mind?",
+    "subheadline": "Tell me what you're trying to build. I'll help turn the requirements into a practical technical solution.",
+    "note": "I work on web applications, SaaS products, business systems, APIs, and AI-powered features inside full-stack products.",
     "projectTypes": [
-      {
-        "value": "ai-automation",
-        "label": "AI agents / automation"
-      },
       {
         "value": "saas-web",
         "label": "SaaS / web application"
+      },
+      {
+        "value": "business-software",
+        "label": "Business / internal software"
       },
       {
         "value": "backend",
         "label": "Backend / API system"
       },
       {
-        "value": "business-software",
-        "label": "Business / internal software"
+        "value": "ai-features",
+        "label": "AI-powered features"
       },
       {
         "value": "other",
@@ -66,40 +66,35 @@
     ]
   },
   "seo": {
-    "title": "NAME HERE — Software Developer & AI Product Builder",
-    "description": "Software developer and AI product builder. I design and ship full-stack applications, backend systems, automation, and software products for businesses.",
+    "title": "Tayyab Shahzad — Full-Stack Developer",
+    "description": "Full-stack developer building web applications, SaaS products, and business systems — with AI-powered features where they add real value.",
     "ogImage": "/images/og-placeholder.svg",
     "keywords": [
-      "software developer",
-      "AI product builder",
       "full-stack developer",
+      "web applications",
       "SaaS development",
-      "backend engineer",
-      "automation",
-      "AI agents"
+      "business systems",
+      "Next.js developer",
+      "AI-powered applications"
     ]
   },
   "social": {
-    "github": "https://github.com/your-username",
+    "github": "https://github.com/iamtayyab-shahzad",
     "linkedin": "https://linkedin.com/in/your-profile",
     "extra": []
   },
   "navigation": [
     {
-      "label": "Home",
-      "href": "/"
-    },
-    {
       "label": "Work",
       "href": "/projects"
     },
     {
-      "label": "About",
-      "href": "/about"
+      "label": "Services",
+      "href": "/#services"
     },
     {
-      "label": "Blog",
-      "href": "/blog"
+      "label": "About",
+      "href": "/about"
     },
     {
       "label": "Contact",
@@ -107,10 +102,9 @@
     }
   ],
   "credibility": [
-    "Software Engineering",
-    "AI & Automation",
-    "Full-Stack Development",
-    "Backend Systems",
-    "SaaS & Product Development"
+    "Full-stack development",
+    "SaaS",
+    "Business systems",
+    "AI-powered features"
   ]
 }

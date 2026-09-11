@@ -1,38 +1,43 @@
 {
   "items": [
     {
-      "title": "AI Agents & Automation",
-      "description": "Agents and workflows that call tools, move data, and take work off repetitive processes.",
+      "title": "Web Applications",
+      "description": "Production-ready web applications built around your business or product.",
       "items": [
-        "AI agents",
-        "Workflow automation",
-        "API and tool integrations",
-        "Business process automation"
+        "Customer-facing applications",
+        "Authenticated product experiences",
+        "Responsive interfaces",
+        "API-backed frontends"
       ]
     },
     {
-      "title": "SaaS & Web Applications",
-      "description": "Product-ready web apps — from first MVP to something customers can log into.",
+      "title": "SaaS & Product Development",
+      "description": "From MVPs to full products, including frontend, backend, database, APIs, authentication, and deployment.",
       "items": [
         "SaaS MVPs",
-        "Dashboards",
-        "Customer-facing applications",
-        "Authentication and payments"
+        "Multi-tenant product foundations",
+        "Dashboards and billing flows",
+        "Production deployment"
       ]
     },
     {
-      "title": "Backend & Scalable Systems",
-      "description": "APIs and services with a data model that can grow without a rewrite.",
-      "items": ["APIs", "Service architecture", "Databases", "Third-party integrations"]
+      "title": "Business Systems",
+      "description": "Custom admin panels, dashboards, POS systems, workflows, and internal tools that replace fragmented processes.",
+      "items": [
+        "POS and operations software",
+        "Admin dashboards",
+        "Internal tools",
+        "Workflow automation"
+      ]
     },
     {
-      "title": "Business Software",
-      "description": "Internal and operational tools shaped around how the business actually runs.",
+      "title": "AI-Powered Features",
+      "description": "AI assistants, automation, intelligent workflows, recommendations, and API integrations added to full-stack products where they create real value.",
       "items": [
-        "POS systems",
-        "Management systems",
-        "Custom internal tools",
-        "Operational software"
+        "AI assistants inside products",
+        "Automation workflows",
+        "LLM / API integrations",
+        "Priority and recommendation features"
       ]
     }
   ]

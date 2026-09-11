@@ -28,11 +28,11 @@ export function SectionHeading({
       )}
     >
       {eyebrow ? (
-        <p className="mb-3 font-mono text-xs uppercase tracking-[0.18em] text-accent">
+        <p className="mb-3 text-xs font-medium uppercase tracking-[0.16em] text-accent">
           {eyebrow}
         </p>
       ) : null}
-      <Title className="text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
+      <Title className="text-3xl font-semibold tracking-tighter text-ink sm:text-4xl">
         {title}
       </Title>
       {description ? (
