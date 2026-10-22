@@ -1,0 +1,77 @@
+{
+  "name": "Commenter AI",
+  "tagline": "An AI product that drafts LinkedIn comments and DMs in the user's own voice, and keeps the conversations that matter in one place.",
+  "description": "Commenter AI helps founders, salespeople, and recruiters stay active in conversations without writing every reply from scratch. I worked across the product: the workflows people use, the data behind them, the channel integrations, and the AI drafting. The public product learns a person's tone, suggests comments they can edit, and tracks who they have engaged with so warm leads are not buried in a feed.",
+  "category": "AI conversation product",
+  "featured": true,
+  "isPlaceholder": false,
+  "coverImage": {
+    "src": "/images/projects/commenter-ai/features.png",
+    "alt": "Commenter AI feature grid: voice-matched comments, CRM, custom newsfeed, and support for LinkedIn, X, Meta, and Instagram",
+    "width": 1024,
+    "height": 475
+  },
+  "screenshots": [
+    {
+      "src": "/images/projects/commenter-ai/home.png",
+      "alt": "Commenter AI homepage offering AI help for comments and DMs",
+      "width": 1024,
+      "height": 472
+    },
+    {
+      "src": "/images/projects/commenter-ai/comparison.png",
+      "alt": "Before and after Commenter AI: faster comments that still sound like the user",
+      "width": 1024,
+      "height": 472
+    },
+    {
+      "src": "/images/projects/commenter-ai/how-it-works.png",
+      "alt": "Commenter AI onboarding: sign up, answer a few questions, then post comments",
+      "width": 1024,
+      "height": 469
+    },
+    {
+      "src": "/images/projects/commenter-ai/voice.png",
+      "alt": "Controls for tone, length, emotion, and formality before a comment is posted",
+      "width": 1024,
+      "height": 473
+    },
+    {
+      "src": "/images/projects/commenter-ai/visibility.png",
+      "alt": "Commenter AI visibility section with a custom newsfeed and before-and-after profile charts",
+      "width": 1024,
+      "height": 468
+    },
+    {
+      "src": "/images/projects/commenter-ai/positioning.png",
+      "alt": "Commenter AI positioning: visibility, trust, and leads from commenting",
+      "width": 1024,
+      "height": 475
+    }
+  ],
+  "problem": "People who sell or recruit live in LinkedIn comments, DMs, email, and meetings. The useful threads get buried, writing a good reply takes too long, and generic AI drafts sound nothing like the person sending them.",
+  "approach": "Organize the conversations that need a response, then draft in the user's voice instead of generating a post they would never send. The user picks the tone, edits the line, and posts it themselves.",
+  "solution": "A product for daily commenting and follow-up. It learns tone from a short setup and from comments the user actually posts, drafts replies they can shorten or rewrite, and keeps a record of who they have engaged with and what should happen next. A custom newsfeed limits the feed to the people and topics they care about. The same commenting workflow is aimed at LinkedIn, with X, Meta, and Instagram in the product as well.",
+  "outcome": "",
+  "features": [
+    "Drafts comments in the user's voice, with controls for tone, length, emotion, and formality",
+    "User reviews and posts the reply. Nothing is sent automatically",
+    "Custom newsfeed so engagement stays on the right people and topics",
+    "Lightweight CRM of who they have talked to, how often, and what comes next",
+    "Built around comments and replies, not generic post generation",
+    "Onboarding that learns a voice from a few questions, then improves from comments they post",
+    "Web product plus iOS and Android apps"
+  ],
+  "architecture": "Full-stack product with channel integrations and an AI drafting layer. Conversation and engagement data is stored so the app can rank what needs attention and keep next steps attached to the person, not only to the latest message.",
+  "stack": [
+    "TypeScript",
+    "React",
+    "Node.js",
+    "OpenAI API",
+    "PostgreSQL",
+    "REST APIs"
+  ],
+  "links": {
+    "live": "https://www.commenter.ai/"
+  }
+}

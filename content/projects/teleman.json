@@ -1,0 +1,63 @@
+{
+  "name": "Teleman",
+  "tagline": "A browser calling workspace for agents: dial, take calls, check voicemail, and see the day's numbers in one screen.",
+  "description": "Teleman is the agent workspace I built for phone teams. An agent signs in, gets a line and an extension, and works from one screen: a dialer, recent calls, voicemail, and personal stats. Call history, outcomes, and voicemail come from the same call data instead of a separate spreadsheet.",
+  "category": "Voice calling platform",
+  "featured": true,
+  "isPlaceholder": false,
+  "coverImage": {
+    "src": "/images/projects/teleman/dialer.png",
+    "alt": "Teleman agent workspace with a browser dialer, line status, and recent calls",
+    "width": 1024,
+    "height": 436
+  },
+  "screenshots": [
+    {
+      "src": "/images/projects/teleman/calls.png",
+      "alt": "Call history filtered by missed, incoming, and outgoing, with outcomes such as completed and callback requested",
+      "width": 1024,
+      "height": 435
+    },
+    {
+      "src": "/images/projects/teleman/voicemail.png",
+      "alt": "Voicemail inbox with playback and a short transcript for each message",
+      "width": 1024,
+      "height": 436
+    },
+    {
+      "src": "/images/projects/teleman/stats.png",
+      "alt": "Agent stats for calls, talk time, answer rate, and inbound versus outbound mix",
+      "width": 1024,
+      "height": 436
+    },
+    {
+      "src": "/images/projects/teleman/settings.png",
+      "alt": "Call audio settings, ringtone, desktop notifications, and keyboard shortcuts",
+      "width": 1024,
+      "height": 436
+    }
+  ],
+  "problem": "Calling teams jump between a desk phone, a call log, and a voicemail box. Missed calls and callbacks get lost, and an agent cannot see their own day without asking a supervisor for a report.",
+  "approach": "Put the whole shift in the browser. The dialer, history, voicemail, and stats read the same call records, and the agent can set themselves away or open a supervisor view without leaving the workspace.",
+  "solution": "A ConnectPoint-style agent workspace. The agent dials from a keypad or calls back from history, filters calls by missed, incoming, and outgoing, and sees outcomes such as completed, no answer, and callback requested. Voicemail plays in the app with a short transcript. A stats view shows the day's volume, talk time, and inbound versus outbound mix. Settings cover the microphone, speaker, ringtone, desktop alerts, and keyboard shortcuts for answer, hang up, and dialing.",
+  "outcome": "",
+  "features": [
+    "Browser dialer with line status, extension, and click-to-call from recent calls",
+    "Call history with missed, incoming, and outgoing filters",
+    "Outcomes on each call, including completed, missed, no answer, and callback requested",
+    "Voicemail inbox with playback and a transcript preview",
+    "Agent presence, including set-away, plus a supervisor view",
+    "Personal stats for volume, talk time, answer rate, and call mix",
+    "Audio devices, ringtone, desktop notifications, and keyboard shortcuts"
+  ],
+  "architecture": "A web agent workspace on top of a call backend. Dial, answer, and hang-up actions update live call state, and completed calls write into history, voicemail, and the stats view the agent sees.",
+  "stack": [
+    "TypeScript",
+    "React",
+    "Node.js",
+    "WebSockets",
+    "PostgreSQL",
+    "REST APIs"
+  ],
+  "links": {}
+}

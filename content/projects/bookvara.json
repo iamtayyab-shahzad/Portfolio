@@ -1,0 +1,71 @@
+{
+  "name": "Bookvara",
+  "tagline": "Scheduling, payments, clients, and staff in one system for service businesses — the product is Vara.",
+  "description": "Bookvara (Vara) is a management platform for shops that live on appointments: medspas, salons, wellness studios, and trades. I built across the interface and the backend so booking, the service catalog, client records, payments, and reporting stay on one set of data instead of three separate tools.",
+  "category": "Scheduling and payments",
+  "featured": true,
+  "isPlaceholder": false,
+  "coverImage": {
+    "src": "/images/projects/bookvara/calendar.png",
+    "alt": "Vara calendar for a studio, with staff columns and a client booking panel for date, time, and price",
+    "width": 1024,
+    "height": 475
+  },
+  "screenshots": [
+    {
+      "src": "/images/projects/bookvara/home.png",
+      "alt": "Vara homepage: simplify scheduling and streamline payments for service businesses",
+      "width": 1024,
+      "height": 468
+    },
+    {
+      "src": "/images/projects/bookvara/scheduling.png",
+      "alt": "Vara features for appointment scheduling and a services and products catalog",
+      "width": 1024,
+      "height": 475
+    },
+    {
+      "src": "/images/projects/bookvara/clients-payments.png",
+      "alt": "Vara client management and built-in card and wallet payments",
+      "width": 1024,
+      "height": 417
+    },
+    {
+      "src": "/images/projects/bookvara/reporting.png",
+      "alt": "Vara reporting for revenue, appointments, and staff productivity",
+      "width": 1024,
+      "height": 475
+    },
+    {
+      "src": "/images/projects/bookvara/business-types.png",
+      "alt": "Vara positioned for medspas, beauty, wellness, and professional services",
+      "width": 1024,
+      "height": 475
+    }
+  ],
+  "problem": "A service business usually pays for one tool to take bookings, another to charge cards, and a notebook for client notes. Staff availability goes stale, two people get the same slot, and the owner cannot see the week without exporting something.",
+  "approach": "One record for the appointment, the service, the client, and the payment. The calendar, the public booking flow, and the reports all read that record, so a change in staff hours shows up before the next person books.",
+  "solution": "Vara gives the shop a calendar by staff, a catalog of services and products with price and duration, client history and notes, and checkout for cards and digital wallets. Clients pick a time online. Owners get a dashboard for revenue, appointments, and staff productivity. The same product is aimed at medspas, salons, wellness, and job-based services such as contractors.",
+  "outcome": "",
+  "features": [
+    "Staff calendar with appointments, cancellations, and live availability",
+    "Online booking so clients choose a service, a time, and see the price",
+    "Service and product catalog with pricing, duration, and inventory",
+    "Client records: visit history, preferences, and notes",
+    "Card, debit, and digital-wallet payments inside the product",
+    "Dashboards for revenue, appointments, and staff productivity",
+    "Fit for appointment businesses and for job-based services"
+  ],
+  "architecture": "A multi-tenant web app. Appointments, clients, catalog items, and payments share one data model, so the calendar, the booking page, and the reports cannot drift apart.",
+  "stack": [
+    "TypeScript",
+    "React",
+    "Next.js",
+    "Node.js",
+    "PostgreSQL",
+    "Stripe"
+  ],
+  "links": {
+    "live": "https://www.bookvara.com/"
+  }
+}

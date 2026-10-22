@@ -57,6 +57,9 @@ function mapProject(entry: StoredProject & { slug: string }): Project {
 
 const PROJECT_ORDER = [
   "experienceos",
+  "commenter-ai",
+  "teleman",
+  "bookvara",
   "soul-ai",
   "ecommerce-research-agent",
   "krunchies",
