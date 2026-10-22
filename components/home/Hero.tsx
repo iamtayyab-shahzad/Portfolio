@@ -45,7 +45,7 @@ export function Hero() {
           </div>
 
           <p className="mt-8 text-sm text-dim">
-            {siteConfig.credibility.join(" · ")}
+            {siteConfig.credibility.join(" • ")}
           </p>
         </div>
       </Container>

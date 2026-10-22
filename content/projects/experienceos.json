@@ -1,8 +1,8 @@
 {
   "name": "experienceOS",
-  "tagline": "B2B SaaS for experiential agencies — campaigns, staffing, assets, lead capture, and reporting in one platform.",
+  "tagline": "Campaign operations software for experiential agencies: staffing, assets, lead capture, and reporting in one platform.",
   "description": "experienceOS is the operating system for experiential campaigns. Agencies and live-event teams use it to run programs end to end instead of stitching spreadsheets, Airtable, and decks together.",
-  "category": "B2B SaaS · Experiential Ops",
+  "category": "B2B SaaS",
   "featured": true,
   "isPlaceholder": false,
   "coverImage": {
@@ -21,7 +21,7 @@
   ],
   "problem": "Experiential teams burn hours across disconnected tools. Campaigns, staffing, assets, and reporting live in different places, so post-event decks get rebuilt from scratch every time.",
   "approach": "Build one product around experiential workflows: campaigns as the spine, with staffing, assets, field capture, and reporting connected to the same program context.",
-  "solution": "A multi-module SaaS platform for campaign operations — from setup and field execution through live engagement data and client-ready reporting.",
+  "solution": "A multi-module SaaS platform for campaign operations, from setup and field execution through live engagement data and client-ready reporting.",
   "outcome": "",
   "features": [
     "Campaign management with locations, timelines, and status boards",
@@ -30,7 +30,7 @@
     "On-site lead and engagement capture",
     "Dashboards and automated post-event reporting"
   ],
-  "architecture": "Multi-tenant B2B SaaS organized around campaign → event → ops modules, with shared program context feeding staffing, assets, field capture, and reporting.",
+  "architecture": "Multi-tenant B2B SaaS organized around campaign, event, and ops modules, with shared program context feeding staffing, assets, field capture, and reporting.",
   "stack": [
     "TypeScript",
     "React",

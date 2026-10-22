@@ -1,8 +1,8 @@
 {
-  "name": "Musa Cafe — POS + Website",
-  "tagline": "Full restaurant stack: customer website, staff POS, and admin — with a Go backend built for live shop operations.",
-  "description": "Musa Cafe is live restaurant software: customer website, staff POS, and admin on a shared Go API. Orders, printing, history, analytics, and offline-capable POS flows keep the counter moving in real shop conditions.",
-  "category": "Full-Stack · Restaurant Ops",
+  "name": "Musa Cafe",
+  "tagline": "Online ordering and POS software that connects customer orders, counter sales, staff workflows, and administration in one system.",
+  "description": "Musa Cafe is live restaurant software: a customer website, staff POS, and admin dashboard on a shared Go API. Orders, printing, history, analytics, and offline-capable POS flows keep the counter moving in real shop conditions.",
+  "category": "Restaurant Operations Platform",
   "featured": true,
   "isPlaceholder": false,
   "coverImage": {
@@ -19,10 +19,10 @@
       "height": 900
     }
   ],
-  "problem": "Independent restaurants often run a website for online orders, a separate POS at the counter, and no unified admin view. Orders get lost between systems, printing and kitchen flow break under pressure, and owners lack a single source of truth for sales and history.",
-  "approach": "One Go backend serving three purpose-built frontends: a customer ordering site, a staff POS optimized for speed and offline resilience, and an admin dashboard for products, orders, and analytics. Every order path writes through the same API.",
-  "solution": "A full restaurant stack where website orders and counter sales land in one system. Staff get POS workflows for orders, printing, and history; admins get operational controls and analytics; the Go API keeps the business synchronized across locations.",
-  "outcome": "Live shop software in active restaurant use — handling real customer orders from website to kitchen, with POS and admin workflows built for day-to-day operations.",
+  "problem": "Independent restaurants often run a website for online orders, a separate POS at the counter, and no unified admin view. Orders get lost between systems, and owners lack a single source of truth for sales and history.",
+  "approach": "One Go backend serving three purpose-built frontends: a customer ordering site, a staff POS optimized for speed and offline resilience, and an admin dashboard for products, orders, and analytics.",
+  "solution": "A full restaurant stack where website orders and counter sales land in one system. Staff get POS workflows for orders, printing, and history; admins get operational controls and analytics.",
+  "outcome": "Live shop software in active restaurant use, handling real customer orders from website to kitchen.",
   "features": [
     "Customer-facing website for browsing and online ordering",
     "Staff POS for counter orders, tickets, and fast checkout",
@@ -31,7 +31,7 @@
     "Order printing and kitchen-facing operational handoff",
     "Order history and sales analytics for owners"
   ],
-  "architecture": "Three Next.js frontends (website, POS, admin) on a shared Go (Gin) REST API and PostgreSQL. Order, product, and sales workflows are centralized so online and in-store channels stay synchronized; POS clients are designed to keep working through brief connectivity issues.",
+  "architecture": "Three Next.js frontends (website, POS, admin) on a shared Go (Gin) REST API and PostgreSQL, so online and in-store channels stay synchronized.",
   "stack": [
     "Go",
     "Gin",

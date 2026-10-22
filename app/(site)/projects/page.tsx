@@ -77,7 +77,7 @@ export default function ProjectsPage() {
           eyebrow="Work"
           title="Selected Work"
           as="h1"
-          description="Software products and business systems I've built across SaaS, operations, analytics, and AI-powered features."
+          description="Software products and business systems I've built across SaaS, operations, analytics, and AI."
         />
 
         <div className="mt-12 space-y-6">

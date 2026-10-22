@@ -1,8 +1,8 @@
 {
   "name": "Commenter AI",
-  "tagline": "AI sales conversation prioritization across LinkedIn, Gmail, and Google Calendar.",
-  "description": "Commenter AI helps founders, AEs, and recruiters running many active deals. It ranks revenue conversations by context, timing, next steps, and meeting signals — so the right threads get attention first.",
-  "category": "AI Product · Sales Ops",
+  "tagline": "Sales conversation software that ranks LinkedIn, Gmail, and Calendar threads so revenue deals stay visible.",
+  "description": "Commenter AI helps founders, AEs, and recruiters running many active deals. It ranks revenue conversations by context, timing, next steps, and meeting signals so the right threads get attention first.",
+  "category": "AI-Powered Product",
   "featured": true,
   "isPlaceholder": false,
   "coverImage": {
@@ -26,7 +26,7 @@
     }
   ],
   "problem": "Sellers juggling 10+ deals jump between LinkedIn, Gmail, and Calendar. The loudest thread wins, quiet buyers slip, and half-won deals stall.",
-  "approach": "Connect the channels sellers already use, label revenue conversations once, then rank what needs attention today — without forcing a full CRM workflow.",
+  "approach": "Connect the channels sellers already use, label revenue conversations once, then rank what needs attention today without forcing a full CRM workflow.",
   "solution": "A prioritization product with a daily ordered conversation list, deal context and ownership, and AI-assisted drafting when the user chooses to reply faster.",
   "outcome": "",
   "features": [

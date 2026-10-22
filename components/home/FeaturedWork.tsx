@@ -88,12 +88,11 @@ function ProjectTile({ project }: { project: Project }) {
 
 export function FeaturedWork() {
   const projects = getProjects();
-  const lead = projects.find((project) => project.slug === "musa-cafe-pos-website") ?? projects[0];
-  const secondary = projects.filter(
-    (project) =>
-      project.slug !== lead.slug &&
-      ["experienceos", "commenter-ai", "bookvara"].includes(project.slug),
-  );
+  const bySlug = Object.fromEntries(projects.map((project) => [project.slug, project]));
+  const lead = bySlug["musa-cafe-pos-website"] ?? projects[0];
+  const secondary = ["experienceos", "commenter-ai", "bookvara"]
+    .map((slug) => bySlug[slug])
+    .filter(Boolean) as Project[];
 
   return (
     <Section id="work">
@@ -101,7 +100,7 @@ export function FeaturedWork() {
         <SectionHeading
           eyebrow="Selected work"
           title="Software that ships"
-          description="Products and systems built for real operations — restaurant software, B2B SaaS, scheduling, and AI-assisted workflows."
+          description="Products and systems built for real operations: restaurant software, B2B SaaS, scheduling, and AI-assisted workflows."
         />
         <ButtonLink href="/projects" variant="secondary" className="self-start sm:self-auto">
           All projects
