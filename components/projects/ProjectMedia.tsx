@@ -1,14 +1,28 @@
-import { ArrowUpRightIcon } from "@/components/ui/Icons";
+import { ArrowUpRightIcon, GitHubIcon } from "@/components/ui/Icons";
 import { SmartImage } from "@/components/ui/SmartImage";
 import { cn } from "@/lib/utils";
 import type { Project } from "@/types/content";
 import Link from "next/link";
+
+export function hasRealMedia(project: Project): boolean {
+  return !project.coverImage.src.includes("/placeholder-");
+}
+
+function hostname(url: string): string {
+  try {
+    return new URL(url).hostname.replace(/^www\./, "");
+  } catch {
+    return url;
+  }
+}
 
 type ProjectMediaProps = {
   project: Project;
   priority?: boolean;
   className?: string;
   sizes?: string;
+  chrome?: boolean;
+  compact?: boolean;
 };
 
 export function ProjectMedia({
@@ -16,33 +30,110 @@ export function ProjectMedia({
   priority = false,
   className,
   sizes = "(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1120px",
+  chrome = true,
+  compact = false,
 }: ProjectMediaProps) {
+  if (!hasRealMedia(project)) {
+    return <ProjectPreview project={project} className={className} compact={compact} />;
+  }
+
   return (
     <div
       className={cn(
-        "relative aspect-[16/10] overflow-hidden rounded-xl border border-line bg-elevated",
+        "overflow-hidden rounded-xl border border-white/10 bg-elevated",
         className,
       )}
     >
-      <SmartImage
-        src={project.coverImage.src}
-        alt={project.coverImage.alt}
-        fill
-        sizes={sizes}
-        priority={priority}
-        className="object-cover"
-      />
+      {chrome ? (
+        <div className="flex items-center gap-3 border-b border-white/[0.07] bg-[#0d1524] px-3.5 py-2.5">
+          <span className="flex gap-1.5" aria-hidden>
+            <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
+            <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
+            <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
+          </span>
+          {project.links.live ? (
+            <span className="truncate rounded-md bg-white/[0.05] px-2.5 py-0.5 font-mono text-[11px] text-dim">
+              {hostname(project.links.live)}
+            </span>
+          ) : null}
+        </div>
+      ) : null}
+      <div className="relative aspect-[16/10]">
+        <SmartImage
+          src={project.coverImage.src}
+          alt={project.coverImage.alt}
+          fill
+          sizes={sizes}
+          priority={priority}
+          className="object-cover object-top"
+        />
+      </div>
     </div>
   );
 }
 
-export function TechPills({ stack }: { stack: string[] }) {
+/**
+ * Drawn preview for projects without screenshots: shows the system as a
+ * pipeline built from the project's own feature list.
+ */
+export function ProjectPreview({
+  project,
+  className,
+  compact = false,
+}: {
+  project: Project;
+  className?: string;
+  compact?: boolean;
+}) {
+  const steps = project.features.slice(0, compact ? 3 : 4);
+
   return (
-    <ul className="flex flex-wrap gap-2">
+    <div
+      role="img"
+      aria-label={project.coverImage.alt}
+      className={cn(
+        "relative flex aspect-[16/10] flex-col overflow-hidden rounded-xl border border-white/10 bg-[#0d1524]",
+        compact ? "p-3.5" : "p-5 sm:p-6",
+        className,
+      )}
+    >
+      <div aria-hidden className="grid-texture absolute inset-0" />
+      <div className="relative flex items-center justify-between gap-3">
+        <span className="truncate font-mono text-[10px] uppercase tracking-[0.16em] text-accent sm:text-[11px]">
+          {project.category}
+        </span>
+        <span className="shrink-0 font-mono text-[10px] text-dim sm:text-[11px]">
+          {project.stack[0]}
+        </span>
+      </div>
+      <ol className={cn("relative mt-auto", compact ? "space-y-1.5" : "space-y-2.5")}>
+        {steps.map((step, index) => (
+          <li key={step} className="flex items-center gap-2.5">
+            <span
+              className={cn(
+                "flex shrink-0 items-center justify-center rounded-md border border-white/10 bg-white/[0.04] font-mono text-muted",
+                compact ? "h-5 w-5 text-[9px]" : "h-6 w-6 text-[10px]",
+              )}
+            >
+              {index + 1}
+            </span>
+            <span className={cn("truncate text-ink/85", compact ? "text-[11px]" : "text-[13px]")}>
+              {step}
+            </span>
+          </li>
+        ))}
+      </ol>
+    </div>
+  );
+}
+
+export function TechPills({ stack, className }: { stack: string[]; className?: string }) {
+  return (
+    <ul className={cn("flex flex-wrap gap-1.5", className)} aria-label="Technologies">
       {stack.map((tech) => (
         <li
           key={tech}
-          className="rounded-md border border-white/10 bg-white/[0.03] px-2.5 py-1 font-mono text-[11px] text-muted"
+          className="rounded-full bg-accent-soft px-2.5 py-1 font-mono text-[11px] leading-none text-accent"
         >
           {tech}
         </li>
@@ -59,16 +150,17 @@ export function ProjectLinks({
   showCaseStudy?: boolean;
 }) {
   return (
-    <div className="flex flex-wrap gap-4">
+    <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
       {project.links.live ? (
         <a
           href={project.links.live}
           target="_blank"
           rel="noreferrer noopener"
-          className="inline-flex items-center gap-1 text-sm text-accent transition-colors hover:text-ink"
+          className="inline-flex items-center gap-1.5 text-sm font-medium text-accent transition-colors hover:text-accent-hover"
         >
-          Live product
+          Visit live site
           <ArrowUpRightIcon className="h-3.5 w-3.5" />
+          <span className="sr-only">(opens in a new tab)</span>
         </a>
       ) : null}
       {project.links.github ? (
@@ -76,18 +168,19 @@ export function ProjectLinks({
           href={project.links.github}
           target="_blank"
           rel="noreferrer noopener"
-          className="inline-flex items-center gap-1 text-sm text-muted transition-colors hover:text-ink"
+          className="inline-flex items-center gap-1.5 text-sm text-muted transition-colors hover:text-ink"
         >
-          GitHub
-          <ArrowUpRightIcon className="h-3.5 w-3.5" />
+          <GitHubIcon className="h-4 w-4" />
+          Source code
+          <span className="sr-only">(opens in a new tab)</span>
         </a>
       ) : null}
       {showCaseStudy ? (
         <Link
           href={`/projects/${project.slug}`}
-          className="inline-flex items-center gap-1 text-sm text-muted transition-colors hover:text-ink"
+          className="inline-flex items-center gap-1.5 text-sm text-muted transition-colors hover:text-ink"
         >
-          Case study
+          Read case study
           <ArrowUpRightIcon className="h-3.5 w-3.5" />
         </Link>
       ) : null}

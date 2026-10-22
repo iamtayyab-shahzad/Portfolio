@@ -1,43 +1,53 @@
 {
   "items": [
     {
-      "title": "Web Applications",
-      "description": "Production-ready web applications built around your business or product.",
+      "title": "Websites & Web Apps",
+      "description": "Fast, responsive websites and web applications that look professional and turn visitors into customers.",
       "items": [
-        "Customer-facing applications",
-        "Authenticated product experiences",
-        "Responsive interfaces",
-        "API-backed frontends"
+        "Business and product websites",
+        "Online ordering and booking",
+        "Customer accounts and checkout",
+        "SEO-ready, mobile-first pages"
       ]
     },
     {
-      "title": "SaaS & Product Development",
-      "description": "From MVPs to full products, including frontend, backend, database, APIs, authentication, and deployment.",
+      "title": "Business Systems & Dashboards",
+      "description": "Custom software that replaces spreadsheets and disconnected tools — the same kind of system I built for Krunchies.",
       "items": [
-        "SaaS MVPs",
-        "Multi-tenant product foundations",
-        "Dashboards and billing flows",
-        "Production deployment"
+        "POS and order management",
+        "Inventory and stock tracking",
+        "Admin panels with staff roles",
+        "Sales, expense, and profit reports"
       ]
     },
     {
-      "title": "Business Systems",
-      "description": "Custom admin panels, dashboards, POS systems, workflows, and internal tools that replace fragmented processes.",
+      "title": "SaaS Products & MVPs",
+      "description": "Turn an idea into a working product you can show to users and investors, with room to grow after launch.",
       "items": [
-        "POS and operations software",
-        "Admin dashboards",
-        "Internal tools",
+        "Scoped MVP in clear milestones",
+        "Authentication and user roles",
+        "Database and API foundations",
+        "Deployment and handover"
+      ]
+    },
+    {
+      "title": "APIs & Backend Systems",
+      "description": "Reliable backends that keep your data consistent and connect your apps, payments, and third-party services.",
+      "items": [
+        "REST APIs in Go or Python",
+        "PostgreSQL schema design",
+        "WhatsApp and other integrations",
+        "Docker deployment and monitoring"
+      ]
+    },
+    {
+      "title": "AI Tools & Automation",
+      "description": "Practical AI features that save time: assistants that use your own data, and workflows that remove repetitive manual work.",
+      "items": [
+        "Chat assistants over your documents",
+        "Research and data-gathering agents",
+        "OpenAI, Gemini, and local models",
         "Workflow automation"
-      ]
-    },
-    {
-      "title": "AI-Powered Features",
-      "description": "AI assistants, automation, intelligent workflows, recommendations, and API integrations added to full-stack products where they create real value.",
-      "items": [
-        "AI assistants inside products",
-        "Automation workflows",
-        "LLM / API integrations",
-        "Priority and recommendation features"
       ]
     }
   ]

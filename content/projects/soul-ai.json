@@ -1,0 +1,38 @@
+{
+  "name": "Soul AI Chat Agent",
+  "tagline": "An AI assistant backend that answers from a knowledge base and remembers useful facts about each user.",
+  "description": "Soul AI is the backend engine for a personalized chat assistant. It answers user questions through an agent that can look up the user's profile, search a knowledge base, and recall facts from earlier conversations, in English or Russian.",
+  "category": "AI assistant",
+  "featured": true,
+  "isPlaceholder": false,
+  "coverImage": {
+    "src": "",
+    "alt": "Soul AI agent flow: user question, agent, tools, and answer",
+    "width": 1440,
+    "height": 900
+  },
+  "screenshots": [],
+  "problem": "A generic chatbot gives generic answers. This assistant needed to answer from the platform's own knowledge, use what it knows about each user, and stay consistent across conversations.",
+  "approach": "Use an agent that decides which tool it needs — user profile, knowledge search, or memory — instead of stuffing everything into one prompt. Store knowledge and memories as embeddings so the agent retrieves only what is relevant.",
+  "solution": "A FastAPI service with a LangGraph agent that calls tools, keeps conversation state, and saves chat history. A memory layer extracts useful facts from messages and ranks them for later recall. A local development mode runs without the database.",
+  "outcome": "",
+  "features": [
+    "Agent with tool calling and saved conversation state",
+    "Knowledge-base search over embeddings in Supabase",
+    "Long-term memory that extracts and recalls user facts",
+    "Chat history and threads stored in the database",
+    "English and Russian language detection",
+    "Model-call tracing with LangSmith"
+  ],
+  "architecture": "Python FastAPI service. A LangGraph loop alternates between the model and three tools. Knowledge chunks and memories live in Supabase PostgreSQL with vector search, using OpenAI embeddings and an OpenAI chat model.",
+  "stack": [
+    "Python",
+    "FastAPI",
+    "LangGraph",
+    "LangChain",
+    "OpenAI API",
+    "Supabase",
+    "LangSmith"
+  ],
+  "links": {}
+}

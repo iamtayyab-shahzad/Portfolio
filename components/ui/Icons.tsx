@@ -55,6 +55,40 @@ export function CloseIcon({ className }: { className?: string }) {
   );
 }
 
+export function ArrowRightIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 16 16" aria-hidden="true" className={className} fill="none" stroke="currentColor" strokeWidth="1.6">
+      <path d="M3 8h10M9 4l4 4-4 4" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+export function CheckIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 16 16" aria-hidden="true" className={className} fill="none" stroke="currentColor" strokeWidth="1.8">
+      <path d="m3.5 8.5 3 3 6-7" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+export function MapPinIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className={className} fill="none" stroke="currentColor" strokeWidth="1.6">
+      <path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 1 1 13 0c0 5.4-6.5 11-6.5 11Z" strokeLinejoin="round" />
+      <circle cx="12" cy="10" r="2.3" />
+    </svg>
+  );
+}
+
+export function ClockIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className={className} fill="none" stroke="currentColor" strokeWidth="1.6">
+      <circle cx="12" cy="12" r="8.5" />
+      <path d="M12 7.5V12l3 2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
 export function MailIcon({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" className={className} fill="none" stroke="currentColor" strokeWidth="1.6">

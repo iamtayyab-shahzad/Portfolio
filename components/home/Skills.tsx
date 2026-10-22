@@ -3,27 +3,33 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { skillGroups } from "@/data/skills";
 
 export function Skills() {
-  const capabilities = skillGroups.flatMap((group) => group.items);
-
   return (
-    <Section id="capabilities">
-      <div className="grid gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-start lg:gap-16">
+    <Section id="stack">
+      <div className="grid gap-12 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] lg:gap-16">
         <SectionHeading
-          eyebrow="Why work with me"
-          title="Practical full-stack delivery"
-          description="Capabilities that matter when shipping real software — not a wall of logos."
+          eyebrow="Technology"
+          title="A modern stack, chosen for reliability"
+          description="Proven tools I have used in production. I pick what fits your project, not what is trendy — and I explain the trade-offs in plain language."
         />
-        <ul className="grid gap-3 sm:grid-cols-2">
-          {capabilities.map((item) => (
-            <li
-              key={item}
-              className="flex items-start gap-3 border-b border-line pb-3 text-sm text-muted"
-            >
-              <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent" aria-hidden />
-              <span className="leading-relaxed text-ink/90">{item}</span>
-            </li>
+        <div className="grid gap-x-10 gap-y-9 sm:grid-cols-2">
+          {skillGroups.map((group) => (
+            <div key={group.category}>
+              <h3 className="border-b border-line pb-3 text-sm font-semibold text-ink">
+                {group.category}
+              </h3>
+              <ul className="mt-4 flex flex-wrap gap-2">
+                {group.items.map((item) => (
+                  <li
+                    key={item}
+                    className="rounded-md border border-white/[0.08] bg-white/[0.03] px-2.5 py-1.5 text-[13px] text-muted"
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
     </Section>
   );

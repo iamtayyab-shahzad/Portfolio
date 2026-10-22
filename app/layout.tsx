@@ -1,10 +1,10 @@
 import { siteConfig } from "@/data/site";
 import { createMetadata } from "@/lib/seo";
 import type { Metadata, Viewport } from "next";
-import { JetBrains_Mono, Plus_Jakarta_Sans } from "next/font/google";
+import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-const sans = Plus_Jakarta_Sans({
+const sans = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
   display: "swap",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#070708",
+  themeColor: "#0a101c",
   width: "device-width",
   initialScale: 1,
 };

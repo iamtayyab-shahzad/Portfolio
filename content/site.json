@@ -1,63 +1,67 @@
 {
   "name": "Tayyab Shahzad",
-  "wordmark": "Tayyab",
+  "wordmark": "Tayyab Shahzad",
   "role": "Full-Stack Developer",
   "url": "https://tayyab-portfolio-kappa.vercel.app",
   "locale": "en_US",
   "email": "iamtayyabshahzad2025@gmail.com",
-  "location": "Pakistan",
+  "location": "Pakistan (UTC+5) · Working with clients worldwide",
   "availability": {
     "visible": true,
     "available": true,
     "label": "Available for new projects"
   },
   "hero": {
-    "headline": "Full-Stack Development for Businesses & Products",
-    "valueProposition": "I build web applications, SaaS products, and business systems — and add AI where it makes the product smarter or more efficient.",
+    "headline": "I build the software your business runs on.",
+    "valueProposition": "Websites, dashboards, POS and business systems, SaaS MVPs, APIs, and AI tools — designed, built, and deployed end to end. My restaurant platform takes real customer orders every day at krunchies.pk.",
     "primaryCta": {
-      "label": "Start a Project",
+      "label": "Discuss Your Project",
       "href": "/contact"
     },
     "secondaryCta": {
       "label": "View My Work",
-      "href": "/projects"
+      "href": "/#work"
     }
   },
   "about": {
     "image": {
       "src": "/images/about/image/src.png",
       "alt": "Portrait of Tayyab Shahzad, full-stack developer",
-      "width": 640,
-      "height": 800
+      "width": 819,
+      "height": 819
     },
-    "who": "I'm a full-stack developer focused on building practical software products and business systems. I work across frontend, backend, databases, APIs, deployment, and integrations — with AI added when it genuinely improves the product.",
-    "interestedIn": "I care about software that solves real operational problems: ordering systems, admin dashboards, SaaS products, and workflows that replace fragmented tools.",
-    "whatIBuild": "I build full-stack web applications, SaaS products, business management systems, APIs, and custom software. AI features are added when they create measurable value — not as a default label.",
-    "headingTowards": "I want to keep shipping production software that businesses can rely on day to day — clear requirements, solid engineering, and honest delivery."
+    "who": "I'm Tayyab, a full-stack developer from Pakistan. I build complete software products — the interface people use, the API behind it, the database, and the deployment that keeps it running.",
+    "interestedIn": "I start from the business problem, not the tech stack. Before writing code, I make sure I understand who will use the software, what has to work on day one, and what can wait. You get clear written scope, regular progress you can click through, and code you fully own.",
+    "whatIBuild": "My main production work is Krunchies: the ordering website, staff point of sale, and admin system a pizza restaurant runs on, with an offline-capable POS and a Go backend. I also build Python backends that use language models, tools, and knowledge-base search.",
+    "headingTowards": "I'm studying Computer Science at Namal University and taking on freelance projects alongside it. I'm looking for clients who want dependable software built carefully, explained clearly, and delivered on an agreed scope."
   },
   "footer": {
-    "statement": "Full-stack development for web applications, SaaS products, and business systems."
+    "statement": "Full-stack developer building websites, business systems, SaaS products, APIs, and AI tools for clients worldwide."
   },
   "contact": {
-    "headline": "Have a product or business system in mind?",
-    "subheadline": "Tell me what you're trying to build. I'll help turn the requirements into a practical technical solution.",
-    "note": "I work on web applications, SaaS products, business systems, APIs, and AI-powered features inside full-stack products.",
+    "headline": "Let's talk about your project",
+    "subheadline": "Tell me what you want to build or what problem you need solved. I reply within 24 hours with questions, a suggested approach, and next steps.",
+    "note": "A short description is enough to start: what the software should do, who will use it, and any deadline or budget range you have in mind.",
     "projectTypes": [
       {
-        "value": "saas-web",
-        "label": "SaaS / web application"
+        "value": "website",
+        "label": "Website or web application"
       },
       {
-        "value": "business-software",
-        "label": "Business / internal software"
+        "value": "business-system",
+        "label": "Business system, POS, or dashboard"
+      },
+      {
+        "value": "saas-mvp",
+        "label": "SaaS product or MVP"
       },
       {
         "value": "backend",
-        "label": "Backend / API system"
+        "label": "API or backend system"
       },
       {
-        "value": "ai-features",
-        "label": "AI-powered features"
+        "value": "ai-automation",
+        "label": "AI tool or workflow automation"
       },
       {
         "value": "other",
@@ -66,16 +70,20 @@
     ]
   },
   "seo": {
-    "title": "Tayyab Shahzad — Full-Stack Developer",
-    "description": "Full-stack developer building web applications, SaaS products, and business systems — with AI-powered features where they add real value.",
-    "ogImage": "/images/og-placeholder.svg",
+    "title": "Tayyab Shahzad — Full-Stack Developer for Business Software, SaaS & AI Tools",
+    "description": "Full-stack developer building websites, POS and business systems, dashboards, SaaS MVPs, APIs, and AI-powered tools. Creator of the Krunchies restaurant ordering and POS platform.",
+    "ogImage": "/opengraph-image",
     "keywords": [
       "full-stack developer",
-      "web applications",
-      "SaaS development",
-      "business systems",
+      "hire full-stack developer",
+      "freelance web developer",
+      "POS system developer",
+      "restaurant ordering system",
+      "business dashboard development",
+      "SaaS MVP developer",
       "Next.js developer",
-      "AI-powered applications"
+      "Go backend developer",
+      "AI automation developer"
     ]
   },
   "social": {
@@ -86,11 +94,15 @@
   "navigation": [
     {
       "label": "Work",
-      "href": "/projects"
+      "href": "/#work"
     },
     {
       "label": "Services",
       "href": "/#services"
+    },
+    {
+      "label": "Process",
+      "href": "/#process"
     },
     {
       "label": "About",
@@ -102,9 +114,8 @@
     }
   ],
   "credibility": [
-    "Full-stack development",
-    "SaaS",
-    "Business systems",
-    "AI-powered features"
+    "Live in production at krunchies.pk",
+    "Go · Next.js · PostgreSQL · Python",
+    "Replies within 24 hours"
   ]
 }

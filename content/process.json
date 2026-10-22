@@ -2,23 +2,23 @@
   "steps": [
     {
       "number": "01",
-      "title": "Understand",
-      "description": "Understand the business, users, requirements, and desired outcome."
+      "title": "Discovery call",
+      "description": "We talk through your goals, users, and must-haves. I ask the questions that prevent expensive surprises later."
     },
     {
       "number": "02",
-      "title": "Build",
-      "description": "Design and develop the application across frontend, backend, and database."
+      "title": "Scope & plan",
+      "description": "You get a written scope with milestones, timeline, and price, so you know exactly what you are paying for."
     },
     {
       "number": "03",
-      "title": "Integrate",
-      "description": "Connect APIs, payments, AI, external services, and existing workflows where needed."
+      "title": "Build in the open",
+      "description": "I share a live preview link and regular progress updates. You see real working software, not just status reports."
     },
     {
       "number": "04",
-      "title": "Launch",
-      "description": "Deploy, test, refine, and prepare the product for real users."
+      "title": "Launch & handover",
+      "description": "I deploy, test with real data, and hand over the code, accounts, and notes. You own everything."
     }
   ]
 }

@@ -41,7 +41,7 @@ export default function BlogPage() {
               <li key={post.slug} className="py-6">
                 <p className="font-mono text-xs text-dim">{formatDate(post.publishedAt)}</p>
                 <h2 className="mt-2 text-lg font-medium tracking-tight">
-                  <Link href={`/blog/${post.slug}`} className="hover:text-white">
+                  <Link href={`/blog/${post.slug}`} className="transition-colors hover:text-accent">
                     {post.title}
                   </Link>
                 </h2>

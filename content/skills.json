@@ -1,28 +1,47 @@
 {
   "groups": [
     {
-      "category": "Product engineering",
+      "category": "Frontend",
       "items": [
-        "Frontend + backend development",
-        "Database design",
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "TanStack Query",
+        "Offline storage (IndexedDB)"
+      ]
+    },
+    {
+      "category": "Backend & Data",
+      "items": [
+        "Go (Gin)",
+        "Python (FastAPI)",
+        "PostgreSQL",
         "REST APIs",
-        "Authentication & authorization"
+        "JWT auth & user roles",
+        "Supabase"
       ]
     },
     {
-      "category": "Systems & delivery",
+      "category": "AI & Automation",
       "items": [
-        "Admin dashboards",
-        "SaaS architecture",
-        "Third-party integrations",
-        "Deployment and production setup"
+        "LangGraph",
+        "LangChain",
+        "OpenAI API",
+        "Gemini",
+        "Embeddings & retrieval",
+        "Tool-calling agents"
       ]
     },
     {
-      "category": "Intelligence & automation",
+      "category": "Delivery",
       "items": [
-        "AI / API integrations",
-        "Business workflow automation"
+        "Docker",
+        "Vercel",
+        "Render",
+        "Neon",
+        "Git & GitHub",
+        "Vitest & pytest"
       ]
     }
   ]

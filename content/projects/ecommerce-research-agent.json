@@ -1,0 +1,37 @@
+{
+  "name": "E-Commerce Research Agent",
+  "tagline": "An AI research tool that checks product ideas against real sources and refuses to guess when the evidence is weak.",
+  "description": "A research agent for product and dropshipping decisions. It plans the research, searches the public web, reads the source pages, calculates costs in code, and produces a recommendation backed by links — or says the evidence is insufficient.",
+  "category": "AI research automation",
+  "featured": false,
+  "isPlaceholder": false,
+  "coverImage": {
+    "src": "",
+    "alt": "E-commerce research agent pipeline: plan, search, verify, calculate, recommend",
+    "width": 1440,
+    "height": 900
+  },
+  "screenshots": [],
+  "problem": "Product research takes hours of searching, and AI tools often invent numbers that look convincing. A useful research assistant has to show its sources and do the math correctly.",
+  "approach": "Split the work into small, checkable steps. The model plans and summarizes, but prices, margins, and landed costs are calculated in Python, and every claim must point to a source URL.",
+  "solution": "A command-line agent with a 14-step LangGraph pipeline covering market, product, supplier, competitor, and logistics research, followed by pricing, evidence checks, and a final comparison. Results are saved as Markdown and JSON reports.",
+  "outcome": "",
+  "features": [
+    "Researches the USA, UK, and UAE markets with per-market settings",
+    "Saves every piece of evidence with its source URL",
+    "Calculates landed cost and margins in code, not by the model",
+    "Returns 'insufficient evidence' instead of inventing an answer",
+    "Works with OpenAI, Gemini, or a local Ollama model",
+    "Automated test suite with pytest"
+  ],
+  "architecture": "A Python package with a CLI. A LangGraph state graph runs the research nodes, validates structured model output against schemas with retries, and caches fetched pages on disk.",
+  "stack": [
+    "Python",
+    "LangGraph",
+    "OpenAI API",
+    "Gemini",
+    "Ollama",
+    "pytest"
+  ],
+  "links": {}
+}

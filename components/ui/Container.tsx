@@ -26,7 +26,7 @@ type SectionProps = {
 
 export function Section({ id, children, className }: SectionProps) {
   return (
-    <section id={id} className={cn("py-20 md:py-28", className)}>
+    <section id={id} className={cn("relative py-20 md:py-28", className)}>
       <Container>{children}</Container>
     </section>
   );

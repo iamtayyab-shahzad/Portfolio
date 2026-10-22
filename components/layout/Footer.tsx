@@ -1,41 +1,35 @@
+import { SocialIcon } from "@/components/contact/ContactChannels";
+import { Wordmark } from "@/components/layout/Wordmark";
 import { Container } from "@/components/ui/Container";
-import { GitHubIcon, LinkedInIcon, MailIcon } from "@/components/ui/Icons";
-import { siteConfig, socialLinks } from "@/data/site";
+import { MailIcon } from "@/components/ui/Icons";
+import { contactLinks, mailtoHref, siteConfig } from "@/data/site";
 import Link from "next/link";
-
-function SocialIcon({ label }: { label: string }) {
-  if (label === "GitHub") {
-    return <GitHubIcon className="h-4 w-4" />;
-  }
-  if (label === "LinkedIn") {
-    return <LinkedInIcon className="h-4 w-4" />;
-  }
-  return <MailIcon className="h-4 w-4" />;
-}
 
 export function Footer() {
   const year = new Date().getFullYear();
-  const links = socialLinks.filter(
-    (link) => !(link.label === "LinkedIn" && link.href.includes("your-profile")),
-  );
 
   return (
-    <footer className="border-t border-line">
-      <Container className="py-12 md:py-16">
-        <div className="grid gap-10 md:grid-cols-[1.2fr_0.8fr_0.8fr]">
+    <footer className="border-t border-line bg-[#080d17]">
+      <Container className="py-14 md:py-16">
+        <div className="grid gap-10 md:grid-cols-[1.4fr_0.8fr_1fr]">
           <div>
-            <p className="text-sm font-semibold tracking-tight text-ink">
-              {siteConfig.wordmark}
-            </p>
-            <p className="mt-3 max-w-sm text-sm leading-relaxed text-muted">
+            <Link href="/" aria-label={`${siteConfig.name}, home`} className="inline-block rounded-lg">
+              <Wordmark />
+            </Link>
+            <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted">
               {siteConfig.footer.statement}
             </p>
+            {siteConfig.availability.visible && siteConfig.availability.available ? (
+              <p className="mt-5 inline-flex items-center gap-2 text-xs font-medium text-muted">
+                <span aria-hidden className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
+                {siteConfig.availability.label}
+              </p>
+            ) : null}
           </div>
+
           <div>
-            <p className="text-xs font-medium uppercase tracking-[0.16em] text-dim">
-              Navigate
-            </p>
-            <ul className="mt-4 space-y-2">
+            <p className="font-mono text-xs uppercase tracking-[0.16em] text-dim">Navigate</p>
+            <ul className="mt-4 space-y-2.5">
               {siteConfig.navigation.map((item) => (
                 <li key={item.href}>
                   <Link
@@ -48,21 +42,20 @@ export function Footer() {
               ))}
             </ul>
           </div>
+
           <div>
-            <p className="text-xs font-medium uppercase tracking-[0.16em] text-dim">
-              Connect
-            </p>
-            <ul className="mt-4 space-y-2">
+            <p className="font-mono text-xs uppercase tracking-[0.16em] text-dim">Get in touch</p>
+            <ul className="mt-4 space-y-2.5">
               <li>
                 <a
-                  href={`mailto:${siteConfig.email}`}
-                  className="inline-flex items-center gap-2 text-sm text-muted transition-colors hover:text-ink"
+                  href={mailtoHref}
+                  className="inline-flex items-center gap-2 break-all text-sm text-muted transition-colors hover:text-accent"
                 >
-                  <MailIcon className="h-4 w-4" />
+                  <MailIcon className="h-4 w-4 shrink-0" />
                   {siteConfig.email}
                 </a>
               </li>
-              {links.map((link) => (
+              {contactLinks.map((link) => (
                 <li key={link.href}>
                   <a
                     href={link.href}
@@ -70,19 +63,28 @@ export function Footer() {
                     rel={link.identity ? "me noreferrer noopener" : "noreferrer noopener"}
                     className="inline-flex items-center gap-2 text-sm text-muted transition-colors hover:text-ink"
                   >
-                    <SocialIcon label={link.label} />
+                    <SocialIcon label={link.label} className="h-4 w-4" />
                     {link.label}
                   </a>
                 </li>
               ))}
+              <li>
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center gap-1.5 text-sm font-medium text-accent transition-colors hover:text-accent-hover"
+                >
+                  Discuss your project →
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
+
         <div className="mt-12 flex flex-col gap-2 border-t border-line pt-6 text-xs text-dim sm:flex-row sm:items-center sm:justify-between">
           <p>
-            © {year} {siteConfig.name}
+            © {year} {siteConfig.name}. All rights reserved.
           </p>
-          <p>Full-Stack Developer</p>
+          <p>Designed and built by me with Next.js, TypeScript, and Tailwind CSS.</p>
         </div>
       </Container>
     </footer>

@@ -34,3 +34,12 @@ export const socialLinks: SocialLink[] = [
   },
   ...siteConfig.social.extra,
 ];
+
+/** Placeholder profile URLs from the content template should never render publicly. */
+function isConfiguredLink(href: string): boolean {
+  return Boolean(href) && !href.includes("your-profile");
+}
+
+export const contactLinks: SocialLink[] = socialLinks.filter((link) => isConfiguredLink(link.href));
+
+export const mailtoHref = `mailto:${siteConfig.email}`;

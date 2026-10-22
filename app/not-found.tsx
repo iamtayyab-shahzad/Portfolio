@@ -19,7 +19,7 @@ export default function NotFound() {
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <ButtonLink href="/">Go home</ButtonLink>
             <ButtonLink href="/projects" variant="secondary">
-              View work
+              View My Work
             </ButtonLink>
           </div>
         </Container>

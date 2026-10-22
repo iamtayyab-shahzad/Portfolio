@@ -24,7 +24,7 @@ const config: Config = {
         },
       },
       maxWidth: {
-        content: "72rem",
+        content: "74rem",
       },
       fontFamily: {
         sans: ["var(--font-sans)", "ui-sans-serif", "system-ui", "sans-serif"],
@@ -35,6 +35,8 @@ const config: Config = {
       },
       boxShadow: {
         soft: "0 24px 80px -40px rgba(0, 0, 0, 0.65)",
+        frame: "0 30px 80px -30px rgba(2, 6, 18, 0.9), 0 0 0 1px rgba(255, 255, 255, 0.06)",
+        lift: "0 18px 50px -24px rgba(2, 6, 18, 0.85)",
       },
     },
   },

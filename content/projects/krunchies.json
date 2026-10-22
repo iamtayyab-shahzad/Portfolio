@@ -1,0 +1,53 @@
+{
+  "name": "Krunchies Restaurant Platform",
+  "tagline": "Online ordering, staff POS, and admin system for a working pizza restaurant — live at krunchies.pk.",
+  "description": "Krunchies Pizza needed one system for website orders, counter sales, stock, and reporting. I designed and built the full platform: a customer ordering website, a point of sale for staff, and an admin dashboard for the owner, all running on one Go API and PostgreSQL database.",
+  "category": "Restaurant ordering & POS",
+  "featured": true,
+  "isPlaceholder": false,
+  "coverImage": {
+    "src": "/images/projects/krunchies/menu.png",
+    "alt": "Krunchies Pizza live website showing the menu with categories, search, and pizza cards priced in rupees",
+    "width": 1440,
+    "height": 900
+  },
+  "screenshots": [
+    {
+      "src": "/images/projects/krunchies/home.png",
+      "alt": "Krunchies homepage with the campus and hostel delivery slot window for Namal University students",
+      "width": 1440,
+      "height": 900
+    }
+  ],
+  "problem": "Website orders, counter sales, and stock lived in different places. Staff needed a till that keeps working when the internet drops, and the owner needed to see sales, expenses, and profit without spreadsheets.",
+  "approach": "One backend, three focused apps. Each app is built for the person using it — customers ordering on their phone, cashiers working fast at the counter, and the owner managing the business — while every order lands in the same database.",
+  "solution": "A complete restaurant platform: customers browse the menu and order online, staff take walk-in and phone orders on the POS and print receipts, and the owner manages the menu, stock, purchases, expenses, and reports from the admin dashboard. Completing an order deducts its ingredients from stock automatically.",
+  "outcome": "Live in production at krunchies.pk, taking real customer orders. The backend exposes 113 API endpoints over 20 database tables, with 43 test files covering orders, inventory, and offline sync.",
+  "features": [
+    "Customer website with menu, cart, checkout, and accounts",
+    "Staff POS for walk-in and phone orders with receipt printing",
+    "Offline-first POS: orders keep working without internet and sync later without duplicates",
+    "Inventory with recipes that deduct ingredients when an order completes",
+    "Purchases, suppliers, expenses, and profit-and-loss reporting",
+    "Separate staff and customer logins with role-based access",
+    "WhatsApp alerts for new orders and password resets",
+    "Scheduled free delivery slots for a nearby university campus and hostel"
+  ],
+  "architecture": "A Go (Gin) REST API in a layered structure (handlers, services, repositories) backed by PostgreSQL, serving three Next.js apps. The POS stores orders in IndexedDB and syncs them through an outbox with retries and idempotency keys. The API runs in Docker on Render, the database on Neon, and the website and admin on Vercel.",
+  "stack": [
+    "Go",
+    "Gin",
+    "PostgreSQL",
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "IndexedDB",
+    "Docker",
+    "WhatsApp Cloud API"
+  ],
+  "links": {
+    "github": "https://github.com/iamtayyab-shahzad/Al-Rehman-Software",
+    "live": "https://www.krunchies.pk"
+  }
+}
