@@ -55,7 +55,12 @@ function mapProject(entry: StoredProject & { slug: string }): Project {
   };
 }
 
-const PROJECT_ORDER = ["krunchies", "soul-ai", "ecommerce-research-agent"];
+const PROJECT_ORDER = [
+  "experienceos",
+  "soul-ai",
+  "ecommerce-research-agent",
+  "krunchies",
+];
 
 export function getProjects(): Project[] {
   if (process.env.NODE_ENV === "development") {

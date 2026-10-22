@@ -33,7 +33,7 @@ export function FeaturedWork() {
       {rest.length > 0 ? (
         <div className="mt-14">
           <h3 className="font-mono text-xs uppercase tracking-[0.18em] text-dim">
-            AI & automation
+            More work
           </h3>
           <ul className="-mx-4 mt-4 space-y-2 sm:-mx-5">
             {rest.map((project) => (

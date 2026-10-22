@@ -2,12 +2,12 @@ import { ProjectMedia } from "@/components/projects/ProjectMedia";
 import { ButtonLink } from "@/components/ui/Button";
 import { ArrowRightIcon, CheckIcon } from "@/components/ui/Icons";
 import { Container } from "@/components/ui/Container";
-import { getProjectBySlug } from "@/data/projects";
+import { getProjects } from "@/data/projects";
 import { siteConfig } from "@/data/site";
 import Link from "next/link";
 
 export function Hero() {
-  const flagship = getProjectBySlug("krunchies");
+  const flagship = getProjects()[0];
   const { hero, availability } = siteConfig;
 
   return (
@@ -77,16 +77,17 @@ export function Hero() {
             </Link>
 
             <div className="absolute -bottom-6 left-4 right-4 flex flex-wrap gap-2 sm:left-auto sm:right-6 sm:justify-end">
-              <span className="rounded-lg border border-white/10 bg-[#0d1524]/95 px-3 py-2 text-xs text-muted shadow-lift backdrop-blur">
-                <span className="mr-1.5 inline-block h-1.5 w-1.5 rounded-full bg-emerald-400 align-middle" aria-hidden />
-                Live — real customer orders
-              </span>
-              <span className="rounded-lg border border-white/10 bg-[#0d1524]/95 px-3 py-2 text-xs text-muted shadow-lift backdrop-blur">
-                <span className="font-semibold text-ink">113</span> API endpoints
-              </span>
-              <span className="rounded-lg border border-white/10 bg-[#0d1524]/95 px-3 py-2 text-xs text-muted shadow-lift backdrop-blur">
-                POS works <span className="font-semibold text-ink">offline</span>
-              </span>
+              {(flagship.slug === "krunchies"
+                ? ["Live — real customer orders", "113 API endpoints", "POS works offline"]
+                : ["Campaigns, staffing, and assets", "Live field capture", "Dashboards and reports"]
+              ).map((label) => (
+                <span
+                  key={label}
+                  className="rounded-lg border border-white/10 bg-[#0d1524]/95 px-3 py-2 text-xs text-muted shadow-lift backdrop-blur"
+                >
+                  {label}
+                </span>
+              ))}
             </div>
           </div>
         ) : null}

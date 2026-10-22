@@ -1,0 +1,77 @@
+{
+  "name": "experienceOS",
+  "tagline": "One platform for experiential agencies to run campaigns, staffing, assets, live capture, and client reporting.",
+  "description": "experienceOS is a full-stack platform for experiential marketing agencies and live event teams. I built the product across the marketing site and the operating system itself: campaign setup, event scheduling, staffing, asset tracking, field execution, dashboards, and reporting, so a program no longer lives in spreadsheets.",
+  "category": "Experiential marketing platform",
+  "featured": true,
+  "isPlaceholder": false,
+  "coverImage": {
+    "src": "/images/projects/experienceos/dashboard.png",
+    "alt": "experienceOS product view with campaign dashboard, conversion card, and traffic sources",
+    "width": 1024,
+    "height": 474
+  },
+  "screenshots": [
+    {
+      "src": "/images/projects/experienceos/home.png",
+      "alt": "experienceOS homepage: the operating system for experiential campaigns",
+      "width": 1024,
+      "height": 474
+    },
+    {
+      "src": "/images/projects/experienceos/campaign-setup.png",
+      "alt": "Campaign framework setup with hierarchy, scheduling, roles, and asset allocation",
+      "width": 1024,
+      "height": 466
+    },
+    {
+      "src": "/images/projects/experienceos/live-activation.png",
+      "alt": "Live activation workflow for staffing, custom forms, data capture, and issue logging",
+      "width": 1024,
+      "height": 468
+    },
+    {
+      "src": "/images/projects/experienceos/reporting.png",
+      "alt": "Reporting step with live dashboards, auto-generated reports, and export",
+      "width": 1024,
+      "height": 468
+    },
+    {
+      "src": "/images/projects/experienceos/agencies.png",
+      "alt": "experienceOS solution page for experiential agencies",
+      "width": 1024,
+      "height": 471
+    },
+    {
+      "src": "/images/projects/experienceos/workflow.png",
+      "alt": "experienceOS how-it-works section: from setup to reports in five steps",
+      "width": 1024,
+      "height": 469
+    }
+  ],
+  "problem": "Agencies running live activations keep campaigns, staff schedules, assets, lead capture, and client reports in different spreadsheets and chats. Nothing stays in sync once the event starts, and the recap is rebuilt by hand afterwards.",
+  "approach": "Treat the campaign as the system of record. Set the program up once — events, locations, roles, and assets — then run staffing, field capture, and reporting against that same campaign instead of starting a new document for each activation.",
+  "solution": "A connected platform agencies use from planning through the recap. Teams define the campaign framework, assign staff and vendors, capture engagement while the activation is live, and pull dashboards and client-ready reports from the same data. The public site explains the product, who it is for, and how a team gets from setup to reports.",
+  "outcome": "",
+  "features": [
+    "Campaign framework with events, locations, roles, and reusable program structure",
+    "Event scheduling and asset allocation across activations",
+    "Staff assignments, vendor details, custom forms, and task workflows",
+    "Live execution: engagement capture, issue logging, and team coordination",
+    "Dashboards, auto-generated reports, and export for clients",
+    "Templates and past-campaign data so the next activation starts from what already worked",
+    "Separate paths for agencies and event companies, including a public marketing site"
+  ],
+  "architecture": "A full-stack web application: a public marketing site plus an authenticated operations product. Campaign, staffing, asset, and reporting workflows share one data model so field activity and client reports read from the same records.",
+  "stack": [
+    "TypeScript",
+    "React",
+    "Next.js",
+    "Node.js",
+    "PostgreSQL",
+    "REST APIs"
+  ],
+  "links": {
+    "live": "https://experienceos.io/"
+  }
+}
