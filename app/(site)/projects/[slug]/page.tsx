@@ -1,5 +1,11 @@
 import { ProjectGallery } from "@/components/projects/ProjectGallery";
-import { ProjectLinks, ProjectMedia, TechPills } from "@/components/projects/ProjectMedia";
+import {
+  hasRealMedia,
+  ProjectLinks,
+  ProjectMedia,
+  ProjectSystemOverview,
+  TechPills,
+} from "@/components/projects/ProjectMedia";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { ButtonLink } from "@/components/ui/Button";
 import { Section } from "@/components/ui/Container";
@@ -32,7 +38,7 @@ export async function generateMetadata({ params }: ProjectPageProps) {
     title: `${project.name} — Case Study`,
     description: project.tagline,
     path: `/projects/${project.slug}`,
-    image: project.coverImage.src.includes("/placeholder-") ? undefined : project.coverImage.src,
+    image: hasRealMedia(project) ? project.coverImage.src : undefined,
   });
 }
 
@@ -113,7 +119,11 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         </div>
 
         <div className="mt-12 rounded-2xl border border-line bg-[#0c1422] p-3 shadow-frame sm:p-5">
-          <ProjectMedia project={project} priority sizes="(max-width: 1200px) 100vw, 1150px" />
+          {hasRealMedia(project) ? (
+            <ProjectMedia project={project} priority sizes="(max-width: 1200px) 100vw, 1150px" />
+          ) : (
+            <ProjectSystemOverview project={project} />
+          )}
         </div>
       </Section>
 

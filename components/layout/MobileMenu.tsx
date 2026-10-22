@@ -45,7 +45,7 @@ export function MobileMenu({ open, onClose, active }: MobileMenuProps) {
   return (
     <div
       className={cn(
-        "fixed inset-0 z-50 md:hidden",
+        "fixed inset-0 z-50 lg:hidden",
         open ? "pointer-events-auto" : "pointer-events-none",
       )}
       hidden={!open}

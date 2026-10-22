@@ -127,6 +127,59 @@ export function ProjectPreview({
   );
 }
 
+/** Case-study hero for projects without screenshots: features and stack as a system diagram. */
+export function ProjectSystemOverview({ project }: { project: Project }) {
+  const features = project.features.slice(0, 6);
+
+  return (
+    <figure className="relative overflow-hidden rounded-xl border border-white/10 bg-[#0d1524] p-6 sm:p-10">
+      <div aria-hidden className="grid-texture absolute inset-0" />
+      <figcaption className="relative flex items-center justify-between gap-4">
+        <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-accent">
+          System overview
+        </span>
+        <span className="font-mono text-[11px] text-dim">{project.category}</span>
+      </figcaption>
+
+      <div className="relative mt-8 grid gap-10 lg:grid-cols-[minmax(0,1.35fr)_minmax(0,1fr)] lg:gap-14">
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-[0.12em] text-dim">What it does</p>
+          <div className="relative mt-5">
+            <span aria-hidden className="absolute bottom-3 left-[13px] top-3 w-px bg-line" />
+            <ol className="relative space-y-3">
+              {features.map((feature, index) => (
+                <li key={feature} className="flex items-start gap-4">
+                  <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md border border-accent/30 bg-[#0d1524] font-mono text-[11px] text-accent">
+                    {index + 1}
+                  </span>
+                  <span className="pt-1 text-sm leading-relaxed text-ink/85">{feature}</span>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </div>
+
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-[0.12em] text-dim">Built with</p>
+          <ul className="mt-5 space-y-2">
+            {project.stack.map((tech, index) => (
+              <li
+                key={tech}
+                className="flex items-center justify-between rounded-lg border border-white/[0.08] bg-white/[0.03] px-4 py-2.5"
+              >
+                <span className="font-mono text-[13px] text-ink/90">{tech}</span>
+                <span aria-hidden className="font-mono text-[10px] text-dim">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </figure>
+  );
+}
+
 export function TechPills({ stack, className }: { stack: string[]; className?: string }) {
   return (
     <ul className={cn("flex flex-wrap gap-1.5", className)} aria-label="Technologies">

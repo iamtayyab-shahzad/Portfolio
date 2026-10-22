@@ -15,7 +15,13 @@ export function SocialIcon({ label, className }: { label: string; className?: st
   return <ArrowUpRightIcon className={className} />;
 }
 
-export function ContactChannels({ className }: { className?: string }) {
+export function ContactChannels({
+  className,
+  stacked = false,
+}: {
+  className?: string;
+  stacked?: boolean;
+}) {
   return (
     <div className={cn("space-y-3", className)}>
       <a
@@ -29,13 +35,13 @@ export function ContactChannels({ className }: { className?: string }) {
           <span className="block text-xs font-medium uppercase tracking-[0.12em] text-dim">
             Email me directly
           </span>
-          <span className="mt-1 block truncate text-[15px] font-medium text-ink transition-colors group-hover:text-accent sm:text-base">
+          <span className="mt-1 block break-all text-[15px] font-medium text-ink transition-colors group-hover:text-accent sm:text-base">
             {siteConfig.email}
           </span>
         </span>
       </a>
 
-      <div className="grid gap-3 sm:grid-cols-2">
+      <div className={cn("grid gap-3", stacked ? "sm:grid-cols-2 lg:grid-cols-1" : "sm:grid-cols-2")}>
         <div className="flex items-center gap-3 rounded-xl border border-line bg-surface/50 p-4">
           <ClockIcon className="h-5 w-5 shrink-0 text-accent" />
           <p className="text-sm text-muted">

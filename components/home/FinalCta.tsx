@@ -37,7 +37,7 @@ export function FinalCta() {
             </div>
           </div>
 
-          <ContactChannels />
+          <ContactChannels stacked />
         </div>
       </div>
     </Section>

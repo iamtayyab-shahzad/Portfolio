@@ -37,7 +37,7 @@ export function Navbar() {
           <Wordmark />
         </Link>
 
-        <nav className="hidden items-center gap-0.5 md:flex" aria-label="Primary">
+        <nav className="hidden items-center gap-0.5 lg:flex" aria-label="Primary">
           {siteConfig.navigation.map((item) => {
             const isActive = active === item.href;
             return (
@@ -63,7 +63,7 @@ export function Navbar() {
           })}
         </nav>
 
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <ButtonLink href="/contact" className="min-h-10 px-4 py-2 text-[13px]">
             Discuss Your Project
             <ArrowRightIcon className="h-3.5 w-3.5" />
@@ -72,7 +72,7 @@ export function Navbar() {
 
         <button
           type="button"
-          className="-mr-2 inline-flex h-11 w-11 items-center justify-center rounded-lg text-ink md:hidden"
+          className="-mr-2 inline-flex h-11 w-11 items-center justify-center rounded-lg text-ink lg:hidden"
           aria-expanded={open}
           aria-controls="mobile-menu"
           aria-label={open ? "Close menu" : "Open menu"}

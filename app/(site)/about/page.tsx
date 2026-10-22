@@ -40,7 +40,7 @@ export default function AboutPage() {
           <div className="relative mx-auto w-full max-w-sm lg:sticky lg:top-28 lg:mx-0">
             <div
               aria-hidden
-              className="absolute -inset-3 rounded-[1.4rem] border border-accent/20 bg-accent-soft/40"
+              className="absolute -inset-3 rounded-[1.4rem] border border-accent/20 bg-accent/[0.05]"
             />
             <div className="relative aspect-square overflow-hidden rounded-2xl border border-white/10 bg-elevated">
               <SmartImage
@@ -130,7 +130,7 @@ export default function AboutPage() {
             title="Have something you want built?"
             description="Send a short description of the project. I'll reply within 24 hours with questions and a suggested approach."
           />
-          <ContactChannels />
+          <ContactChannels stacked />
         </div>
       </Section>
     </>

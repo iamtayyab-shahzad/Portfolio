@@ -4,15 +4,16 @@
 
 :root {
   color-scheme: dark;
-  --color-bg: #0a101c;
-  --color-surface: #0f1726;
-  --color-elevated: #141e31;
-  --color-line: #1f2b40;
-  --color-ink: #e9eef6;
-  --color-muted: #a3b0c4;
-  --color-dim: #8190a7;
-  --color-accent: #f5b65b;
-  --color-accent-hover: #ffc978;
+  /* Space-separated RGB channels so Tailwind opacity modifiers (bg-surface/80) work. */
+  --color-bg: 10 16 28;
+  --color-surface: 15 23 38;
+  --color-elevated: 20 30 49;
+  --color-line: 31 43 64;
+  --color-ink: 233 238 246;
+  --color-muted: 163 176 196;
+  --color-dim: 129 144 167;
+  --color-accent: 245 182 91;
+  --color-accent-hover: 255 201 120;
   --color-accent-soft: rgba(245, 182, 91, 0.12);
   --spot-x: 50%;
   --spot-y: -20%;
@@ -39,7 +40,7 @@ body {
 }
 
 :focus-visible {
-  outline: 2px solid var(--color-accent);
+  outline: 2px solid rgb(var(--color-accent));
   outline-offset: 3px;
   border-radius: 4px;
 }
