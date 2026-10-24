@@ -23,6 +23,8 @@ type ProjectMediaProps = {
   sizes?: string;
   chrome?: boolean;
   compact?: boolean;
+  /** Grow with the parent so a short screenshot does not leave an empty band. */
+  expand?: boolean;
 };
 
 export function ProjectMedia({
@@ -32,15 +34,19 @@ export function ProjectMedia({
   sizes = "(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1120px",
   chrome = true,
   compact = false,
+  expand = false,
 }: ProjectMediaProps) {
   if (!hasRealMedia(project)) {
-    return <ProjectPreview project={project} className={className} compact={compact} />;
+    return (
+      <ProjectPreview project={project} className={className} compact={compact} expand={expand} />
+    );
   }
 
   return (
     <div
       className={cn(
         "overflow-hidden rounded-xl border border-white/10 bg-elevated",
+        expand && "flex h-full min-h-[16rem] flex-col",
         className,
       )}
     >
@@ -58,7 +64,7 @@ export function ProjectMedia({
           ) : null}
         </div>
       ) : null}
-      <div className="relative aspect-[16/10]">
+      <div className={cn("relative w-full", expand ? "min-h-[12rem] flex-1" : "aspect-[2/1]")}>
         <SmartImage
           src={project.coverImage.src}
           alt={project.coverImage.alt}
@@ -80,10 +86,12 @@ export function ProjectPreview({
   project,
   className,
   compact = false,
+  expand = false,
 }: {
   project: Project;
   className?: string;
   compact?: boolean;
+  expand?: boolean;
 }) {
   const steps = project.features.slice(0, compact ? 3 : 4);
 
@@ -92,7 +100,8 @@ export function ProjectPreview({
       role="img"
       aria-label={project.coverImage.alt}
       className={cn(
-        "relative flex aspect-[16/10] flex-col overflow-hidden rounded-xl border border-white/10 bg-[#0d1524]",
+        "relative flex flex-col overflow-hidden rounded-xl border border-white/10 bg-[#0d1524]",
+        expand ? "h-full min-h-[16rem]" : "aspect-[2/1]",
         compact ? "p-3.5" : "p-5 sm:p-6",
         className,
       )}

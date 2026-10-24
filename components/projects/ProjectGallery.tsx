@@ -15,7 +15,7 @@ export function ProjectGallery({ shots }: ProjectGalleryProps) {
       {shots.map((shot) => (
         <div
           key={shot.src + shot.alt}
-          className="relative aspect-[16/10] overflow-hidden rounded-xl border border-line bg-elevated"
+          className="relative aspect-[2/1] overflow-hidden rounded-xl border border-line bg-elevated"
         >
           <SmartImage
             src={shot.src}

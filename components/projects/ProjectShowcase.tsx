@@ -1,10 +1,50 @@
 import { ProjectLinks, ProjectMedia, TechPills } from "@/components/projects/ProjectMedia";
+import { SmartImage } from "@/components/ui/SmartImage";
 import { ArrowUpRightIcon } from "@/components/ui/Icons";
 import { cn } from "@/lib/utils";
 import type { Project } from "@/types/content";
 import Link from "next/link";
 
 type HeadingLevel = "h2" | "h3";
+
+function ProjectFrames({ project, priority = false }: { project: Project; priority?: boolean }) {
+  const second = project.screenshots.find(
+    (shot) => shot.src && shot.src !== project.coverImage.src && !shot.src.includes("/placeholder-"),
+  );
+
+  return (
+    <div className="flex h-full min-h-[16rem] flex-1 flex-col gap-3">
+      <Link
+        href={`/projects/${project.slug}`}
+        aria-label={`${project.name} case study`}
+        className="flex min-h-0 flex-1 rounded-xl shadow-frame transition-transform duration-300 hover:-translate-y-1"
+      >
+        <ProjectMedia
+          project={project}
+          priority={priority}
+          expand
+          sizes="(max-width: 1024px) 100vw, 620px"
+          className="w-full"
+        />
+      </Link>
+      {second ? (
+        <Link
+          href={`/projects/${project.slug}`}
+          aria-label={`${project.name} screenshot`}
+          className="relative min-h-[9rem] flex-1 overflow-hidden rounded-xl border border-white/10 shadow-frame transition-transform duration-300 hover:-translate-y-1"
+        >
+          <SmartImage
+            src={second.src}
+            alt={second.alt}
+            fill
+            sizes="(max-width: 1024px) 100vw, 620px"
+            className="object-cover object-top"
+          />
+        </Link>
+      ) : null}
+    </div>
+  );
+}
 
 /** Large case-study card: screenshot or drawn preview, then problem, build, and result. */
 export function ProjectFeature({
@@ -25,21 +65,11 @@ export function ProjectFeature({
       <div className="grid lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)]">
         <div
           className={cn(
-            "border-b border-line bg-[#0c1422] p-5 sm:p-8 lg:border-b-0",
+            "flex flex-col border-b border-line bg-[#0c1422] p-5 sm:p-8 lg:border-b-0",
             reverse ? "lg:order-2 lg:border-l" : "lg:border-r",
           )}
         >
-          <Link
-            href={`/projects/${project.slug}`}
-            aria-label={`${project.name} case study`}
-            className="block rounded-xl shadow-frame transition-transform duration-300 hover:-translate-y-1"
-          >
-            <ProjectMedia
-              project={project}
-              priority={priority}
-              sizes="(max-width: 1024px) 100vw, 620px"
-            />
-          </Link>
+          <ProjectFrames project={project} priority={priority} />
         </div>
 
         <div className="flex flex-col p-6 sm:p-8 lg:p-10">
