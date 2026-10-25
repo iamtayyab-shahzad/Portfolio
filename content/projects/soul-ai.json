@@ -6,12 +6,19 @@
   "featured": true,
   "isPlaceholder": false,
   "coverImage": {
-    "src": "",
-    "alt": "Soul AI agent flow: user question, agent, tools, and answer",
-    "width": 1440,
-    "height": 900
+    "src": "/images/projects/soul-ai/chat.png",
+    "alt": "Soul AI chat screen answering a question, with suggested prompts for explaining a topic, summarizing a document, and writing an email",
+    "width": 490,
+    "height": 286
   },
-  "screenshots": [],
+  "screenshots": [
+    {
+      "src": "/images/projects/soul-ai/history.png",
+      "alt": "Soul AI chat history with saved conversations and search",
+      "width": 493,
+      "height": 288
+    }
+  ],
   "problem": "A generic chatbot gives generic answers. This assistant needed to answer from the platform's own knowledge, use what it knows about each user, and stay consistent across conversations.",
   "approach": "Use an agent that decides which tool it needs — user profile, knowledge search, or memory — instead of stuffing everything into one prompt. Store knowledge and memories as embeddings so the agent retrieves only what is relevant.",
   "solution": "A FastAPI service with a LangGraph agent that calls tools, keeps conversation state, and saves chat history. A memory layer extracts useful facts from messages and ranks them for later recall. A local development mode runs without the database.",
