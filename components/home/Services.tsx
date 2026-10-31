@@ -13,7 +13,7 @@ export function Services() {
         description="From a first version of your idea to the system your team uses every day. Every project includes design, development, deployment, and handover."
       />
 
-      <div className="mt-14 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-10 sm:mt-14 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {services.map((service, index) => (
           <article
             key={service.title}

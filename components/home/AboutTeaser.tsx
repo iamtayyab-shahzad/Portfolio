@@ -21,7 +21,7 @@ export function AboutTeaser() {
         <div className="relative mx-auto w-full max-w-sm lg:mx-0">
           <div
             aria-hidden
-            className="absolute -inset-3 rounded-[1.4rem] border border-accent/20 bg-accent/[0.05]"
+            className="absolute -inset-2 sm:-inset-3 rounded-[1.4rem] border border-accent/20 bg-accent/[0.05]"
           />
           <div className="relative aspect-square overflow-hidden rounded-2xl border border-white/10 bg-elevated">
             <SmartImage

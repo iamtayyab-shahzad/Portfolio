@@ -10,7 +10,7 @@ export function Footer() {
 
   return (
     <footer className="border-t border-line bg-[#080d17]">
-      <Container className="py-14 md:py-16">
+      <Container className="py-12 md:py-16">
         <div className="grid gap-10 md:grid-cols-[1.4fr_0.8fr_1fr]">
           <div>
             <Link href="/" aria-label={`${siteConfig.name}, home`} className="inline-block rounded-lg">
@@ -29,7 +29,7 @@ export function Footer() {
 
           <div>
             <p className="font-mono text-xs uppercase tracking-[0.16em] text-dim">Navigate</p>
-            <ul className="mt-4 space-y-2.5">
+            <ul className="mt-4 grid grid-cols-2 gap-x-6 gap-y-2.5 md:block md:space-y-2.5">
               {siteConfig.navigation.map((item) => (
                 <li key={item.href}>
                   <Link
@@ -49,7 +49,7 @@ export function Footer() {
               <li>
                 <a
                   href={mailtoHref}
-                  className="inline-flex items-center gap-2 break-all text-sm text-muted transition-colors hover:text-accent"
+                  className="inline-flex items-center gap-2 text-sm [overflow-wrap:anywhere] text-muted transition-colors hover:text-accent"
                 >
                   <MailIcon className="h-4 w-4 shrink-0" />
                   {siteConfig.email}
@@ -80,7 +80,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col gap-2 border-t border-line pt-6 text-xs text-dim sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-10 flex flex-col md:mt-12 gap-2 border-t border-line pt-6 text-xs text-dim sm:flex-row sm:items-center sm:justify-between">
           <p>
             © {year} {siteConfig.name}. All rights reserved.
           </p>

@@ -33,7 +33,7 @@ export default function ProjectsPage() {
           description="Each case study covers the problem, what I built, and the technology behind it. Results are only listed where they can be verified."
         />
 
-        <div className="mt-14 space-y-8">
+        <div className="mt-10 sm:mt-14 space-y-8">
           {projects.map((project, index) => (
             <ProjectFeature
               key={project.slug}

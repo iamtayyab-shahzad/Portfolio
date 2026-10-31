@@ -26,12 +26,12 @@ export function FeaturedWork() {
         </Link>
       </div>
 
-      <div className="mt-12">
+      <div className="mt-8 sm:mt-12">
         {flagship ? <ProjectFeature project={flagship} label="Featured" /> : null}
       </div>
 
       {rest.length > 0 ? (
-        <div className="mt-14">
+        <div className="mt-10 sm:mt-14">
           <h3 className="font-mono text-xs uppercase tracking-[0.18em] text-dim">
             More work
           </h3>

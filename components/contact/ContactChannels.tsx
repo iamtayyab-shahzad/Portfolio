@@ -35,7 +35,7 @@ export function ContactChannels({
           <span className="block text-xs font-medium uppercase tracking-[0.12em] text-dim">
             Email me directly
           </span>
-          <span className="mt-1 block break-all text-[15px] font-medium text-ink transition-colors group-hover:text-accent sm:text-base">
+          <span className="mt-1 block [overflow-wrap:anywhere] text-[15px] font-medium text-ink transition-colors group-hover:text-accent sm:text-base">
             {siteConfig.email}
           </span>
         </span>

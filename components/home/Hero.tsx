@@ -13,7 +13,7 @@ export function Hero() {
   return (
     <section className="relative overflow-hidden">
       <div aria-hidden className="grid-texture pointer-events-none absolute inset-0" />
-      <Container className="relative grid items-center gap-14 pb-20 pt-14 sm:pt-20 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.02fr)] lg:gap-12 lg:pb-28 lg:pt-24">
+      <Container className="relative grid items-center gap-10 pb-14 pt-10 sm:gap-14 sm:pb-20 sm:pt-20 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.02fr)] lg:gap-12 lg:pb-28 lg:pt-24">
         <div className="animate-fade-up">
           {availability.visible ? (
             <p className="inline-flex items-center gap-2.5 rounded-full border border-white/10 bg-white/[0.03] py-1.5 pl-2.5 pr-3.5 text-xs font-medium text-muted">
@@ -34,7 +34,7 @@ export function Hero() {
             <span className="text-muted">{siteConfig.role}</span>
           </p>
 
-          <h1 className="mt-3 max-w-xl text-balance text-[2.6rem] font-semibold leading-[1.06] tracking-tight text-ink sm:text-[3.3rem] lg:text-[3.6rem]">
+          <h1 className="mt-3 max-w-xl text-balance text-[2.25rem] font-semibold leading-[1.08] min-[400px]:text-[2.6rem] tracking-tight text-ink sm:text-[3.3rem] lg:text-[3.6rem]">
             {hero.headline}
           </h1>
 
@@ -42,7 +42,7 @@ export function Hero() {
             {hero.valueProposition}
           </p>
 
-          <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
+          <div className="mt-8 flex flex-col sm:mt-9 gap-3 sm:flex-row sm:items-center">
             <ButtonLink href={hero.primaryCta.href}>
               {hero.primaryCta.label}
               <ArrowRightIcon className="h-4 w-4" />
@@ -52,7 +52,7 @@ export function Hero() {
             </ButtonLink>
           </div>
 
-          <ul className="mt-10 flex flex-col gap-2.5 sm:flex-row sm:flex-wrap sm:gap-x-6">
+          <ul className="mt-8 flex flex-col gap-2.5 sm:mt-10 sm:flex-row sm:flex-wrap sm:gap-x-6">
             {siteConfig.credibility.map((item) => (
               <li key={item} className="flex items-center gap-2 text-sm text-muted">
                 <CheckIcon className="h-4 w-4 shrink-0 text-accent" />
@@ -76,7 +76,7 @@ export function Hero() {
               />
             </Link>
 
-            <div className="absolute -bottom-6 left-4 right-4 flex flex-wrap gap-2 sm:left-auto sm:right-6 sm:justify-end">
+            <div className="mt-4 flex flex-wrap gap-2 sm:absolute sm:-bottom-6 sm:left-auto sm:right-6 sm:mt-0 sm:justify-end">
               {(flagship.slug === "krunchies"
                 ? ["Live — real customer orders", "113 API endpoints", "POS works offline"]
                 : ["Campaigns, staffing, and assets", "Live field capture", "Dashboards and reports"]

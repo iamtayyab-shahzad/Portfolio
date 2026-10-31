@@ -10,7 +10,7 @@ export function Process() {
         title="A clear process, with no surprises"
         description="You always know what is being built, what it costs, and when it will be ready."
       />
-      <ol className="relative mt-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+      <ol className="relative mt-10 sm:mt-14 grid gap-8 sm:grid-cols-2 sm:gap-10 lg:grid-cols-4 lg:gap-8">
         <span
           aria-hidden
           className="absolute left-0 right-0 top-[15px] hidden h-px bg-gradient-to-r from-accent/50 via-line to-line lg:block"
